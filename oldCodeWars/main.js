@@ -8,3 +8,13 @@ function saleHotdogs(n){
     if (n < 5) return n * 100;
     if (n >= 5 && n < 10) return n * 95; else return n * 90;
   }
+
+//7kyu 
+// Your task is to convert strings to how they would be written by Jaden Smith. 
+// Capitalize every word.
+
+String.prototype.toJadenCase = function () { 
+    return this.split(" ").map(function(word){
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(" ");
+  }
