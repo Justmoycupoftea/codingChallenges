@@ -1,13 +1,14 @@
 //attempted codewar ladder 8kyu - 7kyu - 6kyu - 7kyu -8kyu
 
-// Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accept 1 parameters:n, 
-// n is the number of customers to buy hotdogs, different numbers have different 
-// prices (refer to the following table), return a number that the customer need to pay how much money.
+// Write a function called repeatStr which repeats the given string string exactly n times.
 
-function saleHotdogs(n){
-    if (n < 5) return n * 100;
-    if (n >= 5 && n < 10) return n * 95; else return n * 90;
-  }
+// repeatStr(6, "I") // "IIIIII"
+// repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+
+function repeatStr (n, s) {
+    return s.repeat(n);
+}
 
 //7kyu 
 // Your task is to convert strings to how they would be written by Jaden Smith. 
@@ -18,3 +19,5 @@ String.prototype.toJadenCase = function () {
       return word.charAt(0).toUpperCase() + word.slice(1);
     }).join(" ");
   }
+
+//6kyu
