@@ -28,3 +28,20 @@ String.prototype.toJadenCase = function () {
 // Examples
 // "the-stealth-warrior" gets converted to "theStealthWarrior"
 // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+function toCamelCase(str){
+str = str.split('');
+return str.map(function(el, i){
+  if(el == '-' || el == '_'){
+    el = str[i+1].toUpperCase();
+    str.splice(i+1, 1);
+  }
+  return el;
+}).join('');
+}
+
+//other soln
+function toCamelCase(str){
+    return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+  }
+  
