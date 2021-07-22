@@ -21,3 +21,4 @@ function firstNonConsecutive(arr) {
 }
 
 //other soln
+//no other soln work on more array and loop problems
