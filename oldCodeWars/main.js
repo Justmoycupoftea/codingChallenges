@@ -88,3 +88,5 @@ return('found the needle at position' + " " + index)
 function findNeedle(haystack) {
   return "found the needle at position " + haystack.indexOf("needle");
 }
+//template literal
+const findNeedle = haystack => `found the needle at position ${haystack.indexOf('needle')}`;
