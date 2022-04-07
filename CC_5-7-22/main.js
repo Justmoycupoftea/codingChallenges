@@ -9,3 +9,22 @@ function sumTwoSmallestNumbers(numbers){
     let sorted = numbers.sort((a,b) => a - b)
     return sorted[0] + sorted[1]
 }
+
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+// Examples:
+
+// 1: -1
+// 14: -14
+// -34: 34
+
+function opposite(number) {
+    //your code here
+    if(number > 0){
+      return number * -1
+    }else{
+      return Math.abs(number)
+    }
+}
+
+//clean
