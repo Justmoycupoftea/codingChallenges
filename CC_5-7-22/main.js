@@ -31,3 +31,6 @@ function opposite(number) {
 function opposite(number) {
     return number > 0 ? -number : Math.abs(number);
   }
+
+//shorter
+const opposite = number => -number;
