@@ -43,7 +43,7 @@ return str.map(function(el, i){
 //other soln
 function toCamelCase(str){
     return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
-  }
+}
 
 //   Given a list of integers, determine whether the sum of its elements is odd or even.
 
