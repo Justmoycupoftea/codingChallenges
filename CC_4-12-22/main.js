@@ -12,3 +12,14 @@ var stringToNumber = function(str){
     
     return null;
   }
+
+  //other solns
+
+  var stringToNumber = function(str){
+    // put your code here
+    return Number(str);
+  }
+
+  var stringToNumber = function(str){
+    return parseInt(str);
+  }
