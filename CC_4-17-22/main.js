@@ -18,3 +18,44 @@ function dutyFree(normPrice, discount, hol){
     var saving = normPrice * discount / 100;
     return Math.floor(hol / saving);
   }
+
+//more code wars
+
+// The code provided is supposed replace all the dots . in the specified String str with dashes -
+
+// But it's not working properly.
+
+// Task
+// Fix the bug so we can all go home early.
+
+// Notes
+// String str will never be null.
+
+var replaceDots = function(str) {
+    return str.replace(/\./g,'-');
+  }
+
+var replaceDots = function(str) {
+    // added the \ to escape special characters
+    // added the g so that replace is run for all occurences in the string
+      return str.replace(/\./g, '-');
+}
+
+//more code wars
+
+// This is the first step to understanding FizzBuzz.
+
+// Your inputs: a positive integer, n, greater than or equal to one. n is provided, you have NO CONTROL over its value.
+
+// Your expected output is an array of positive integers from 1 to n (inclusive).
+
+// Your job is to write an algorithm that gets you from the input to the output.
+
+function preFizz(n) {
+    var output = [];
+    for (var i=1; i<=n; i++)
+    {
+      output.push(i);
+    }
+    return output;
+  }
