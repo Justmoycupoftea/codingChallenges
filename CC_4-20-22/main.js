@@ -26,3 +26,4 @@ function points(games) {
   }
 
   //add this this anki
+  //added to anki work on other solns
