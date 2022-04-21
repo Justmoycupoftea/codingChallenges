@@ -24,3 +24,5 @@ function points(games) {
     });
     return total;
   }
+
+  //add this this anki
