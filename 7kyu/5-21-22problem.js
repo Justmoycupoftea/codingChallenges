@@ -39,7 +39,7 @@ function getMiddle(s)
   let middle = Math.floor(s.length/2);
   
   return s.length % 2 === 0
-        ? s.slice(middle-1, middle+1) //test => te - 1 = e, st - 1 = s return 'es'
-        : s.slice(middle, middle+1);
+        ? s.slice(middle-1, middle+1) //test => te - 1(one from the end) = e, st + 1(one at beginning) = s return 'es'
+        : s.slice(middle, middle+1); //odd length so return one letter
   
 }
