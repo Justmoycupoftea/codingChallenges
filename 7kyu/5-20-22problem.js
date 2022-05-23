@@ -9,8 +9,8 @@
 //E: num.split('').math.pow(Number(num), 2).num.join()
 //P: need to split numbers, square them, and then rejoin them
 function squareDigits(num){
-    let spread = num.toString().split('')
-    let sum = spread.map(x=> x**2)
-    let final = sum.join() // don't need this bc parseInt turns string into num .replace(/\,/g,'')
-    return parseInt(final)
+    let spread = num.toString().split('') //turn num into string so we can split it 123-> 1,2,3
+    let sum = spread.map(x=> x**2) //number is spread out and squareing it
+    let final = sum.join() // don't need this bc parseInt turns string into num .replace(/\,/g,'') //join the string
+    return parseInt(final) //parseInt turns string into number
 }

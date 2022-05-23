@@ -24,4 +24,9 @@
 //P: sqrt parameter % 2 == 0 || % 3 == 0 return true 
 var isSquare = function(n){
     return Math.sqrt(n) % 1 === 0;
-  }
+}
+
+//retyping code to understand
+let isSq = function(n){
+  return Math.sqrt(n) % 1 === 0; //mod 1 goes into the number until 0 then we know its a perfect sq
+}
