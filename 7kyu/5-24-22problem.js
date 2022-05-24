@@ -15,7 +15,21 @@
 //P: use filter? find method?
 
 function stray(numbers) {
-    return numbers.find((e) => numbers.filter((v) => v===e).length === 1)
-    //e parameter put in to generate a number, filter for v a new parameter, is v === e they are the same
-    //return the number that isn't the same
-  }
+    var a = numbers.sort();
+    
+    if(a[0] != a[1]) {
+      return a[0]
+    } 
+    return a[a.length-1]
+}
+//other soln
+function stray(numbers){
+    for (var i in numbers){
+       if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])){return numbers[i]}
+    }
+}
+//using sort
+function stray(numbers) {
+    numbers = numbers.sort();
+    return numbers[0] === numbers[1] ? numbers[numbers.length - 1] : numbers[0];
+}
