@@ -22,3 +22,20 @@
 // nb_year(1500, 5, 100, 5000) -> 15
 // nb_year(1500000, 2.5, 10000, 2000000) -> 10
 //PREP
+function calculateYears(principal, interest, tax, desired) {
+    // your code
+    let total = p0 + p0 * (percent/100) + aug
+  for (let n = 0; total - p > 0; n++)   
+    return n;
+}//used loop incorrectly
+
+//correct soln
+function nbYear(p0, percent, aug, p) {
+    
+    for (let years = 0; p0 < p; years++) { //messed up on loop need p0 < p and not p0 - p to continue the loop
+      //we want to keep looping and adding years until p0 > p
+      p0 = Math.floor(p0 + p0 * percent / 100 + aug); //math.floor rounds down to whole number
+    } //first year will be 1555 and p is 5000 so it's still higher, loop continues until p0 > p, which is 15
+    return years
+  }
+  
