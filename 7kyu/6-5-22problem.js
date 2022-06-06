@@ -8,23 +8,23 @@
 //R: return index of capitol letters in the word
 //E: Hi -> index of 0 for capitol H
 //P: search the string and find capitol letters and deteremine the index 
-var capitals = function (word) {
+// var capitals = function (word) {
 	// Write your code here
-var sL = word.length;
-var i = 0;
-for (; i < sL; i++) {
-    if (word.charAt(i) === word.charAt(i).toUpperCase()) {
-        return(word.charAt(i).indexOf());
-  }
-}
-  }
+// var sL = word.length;
+// var i = 0;
+// for (; i < sL; i++) {
+//     if (word.charAt(i) === word.charAt(i).toUpperCase()) {
+//         return(word.charAt(i).indexOf());
+//   }
+// }
+//   }
 
 //correct soln
 var capitals = function (word) {
 var caps = [];
 for(var i = 0; i < word.length; i++) { //loop through the word
   if(word[i].toUpperCase() == word[i]) caps.push(i); //find position of capitol letter then push into array
-}
+}//word[i] shows poisition of letter
 return caps;
 };
 
