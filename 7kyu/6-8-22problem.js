@@ -18,17 +18,17 @@
 //P: array1.split() check each indivdual is equal to ea other +4 if yes else if -1 and '' = 0
 
 //trying to for of loop to get the letters out then compare if they are == and if they are += 4 else if -1 !== else if '' return 0
-let array1 =['a','b']
-let array2 =['a','b']
-function checkExam(array1, array2) {
-    // good luck
-    for( grade of array1){
-        console.log(grade);
-    }
-    for( grade2 of array2)
-        console.log(grade2)
+// let array1 =['a','b']
+// let array2 =['a','b']
+// function checkExam(array1, array2) {
+//     // good luck
+//     for( grade of array1){
+//         console.log(grade);
+//     }
+//     for( grade2 of array2)
+//         console.log(grade2)
     
-}
+// }
 
 function checkExam(array1, array2) {
     var score = 0;
