@@ -7,6 +7,7 @@
 
 // a = "abcdefghijklmnopqrstuvwxyz"
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
 const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
 // Set is a special kind of Object which stores unique values. This way, when you make a "new Set()" out of the concatenated strings, it will reduce every repeated character to a single value in the Set object.
 
