@@ -32,6 +32,8 @@ const disemvowel = (str) => {
     return newStr;
 };
 
+//another soln
+
 const vowels = 'aeiou';
 
 function disemvowel(str) {
