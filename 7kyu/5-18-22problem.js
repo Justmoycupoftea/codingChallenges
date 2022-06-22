@@ -44,3 +44,8 @@ function printerError(s) {
     }
     return count+"/"+s.length;
 }
+
+//parameters: if array will it be empty or negative
+//Return: would you like numbers sorted, complex answers, edge cases?
+//E: give three diff examples?
+//Psuedo code 
