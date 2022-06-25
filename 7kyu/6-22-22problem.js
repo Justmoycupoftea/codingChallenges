@@ -10,10 +10,17 @@
 //P: filter the list and return the numbers in array
 
 function filter_list(l) {
-    return l.filter(v => typeof v == "number")
+    return l.filter(v => typeof v == "number") //using typeof filters out strings and returns elements that are nums only
+
 }
 
 //another soln
 function filter_list(l) {
     return l.filter(function(v) {return typeof v == 'number'})
 }
+
+// != 'string'
+function filter_list(l) {
+    // Return a new array with the strings filtered out
+  return l.filter( str => typeof str != 'string');
+  }
