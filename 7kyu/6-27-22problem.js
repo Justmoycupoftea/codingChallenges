@@ -11,3 +11,20 @@
 // Example
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+function openOrSenior(data){
+    var result = [];
+    data.forEach(function(member) {
+      if(member[0] >= 55 && member[1] > 7) {
+        result.push('Senior');
+      } else {
+        result.push('Open');
+      }
+    })
+    return result;
+}
+
+//another soln
+function openOrSenior(data){
+    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+  }
+  
