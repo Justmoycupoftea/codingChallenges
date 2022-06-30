@@ -15,12 +15,13 @@
 //P: use filter? find method?
 
 function stray(numbers) {
-    var a = numbers.sort();
+    var a = numbers.sort(); //sort nums
     
-    if(a[0] != a[1]) {
+    if(a[0] != a[1]) { //if first num is not equal to second return num
       return a[0]
-    } 
+    }else{  //else return the last number of the sorted array
     return a[a.length-1]
+    }
 }
 //other soln
 function stray(numbers){

@@ -22,12 +22,12 @@
 // nb_year(1500, 5, 100, 5000) -> 15
 // nb_year(1500000, 2.5, 10000, 2000000) -> 10
 //PREP
-function calculateYears(principal, interest, tax, desired) {
-    // your code
-    let total = p0 + p0 * (percent/100) + aug
-  for (let n = 0; total - p > 0; n++)   
-    return n;
-}//used loop incorrectly
+// function calculateYears(principal, interest, tax, desired) {
+//     // your code
+//     let total = p0 + p0 * (percent/100) + aug
+//   for (let n = 0; total - p > 0; n++)   
+//     return n;
+// }//used loop incorrectly
 
 //correct soln
 function nbYear(p0, percent, aug, p) {

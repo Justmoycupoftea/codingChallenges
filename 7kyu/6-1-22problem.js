@@ -13,11 +13,11 @@
 //R: return the string without vowels
 //E: LOL loser -> LL lsr
 //P: turn string to lowercase first, then filter string for vowels, split, filter, join and return
-function disemvowel(str) {
-    return str;
-}
+// function disemvowel(str) {
+//     return str;
+// }
 
-return str.replaceAll(/a/e/i/o/u, '')
+// return str.replaceAll(/a/e/i/o/u, '')
 
 //correct soln
 const disemvowel = (str) => {

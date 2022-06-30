@@ -32,12 +32,12 @@ function reverseWords(str) {
 //P: figure out how many people are left at the end
 //use sort and sum all of them
 //incorrect soln
-var number = function(busStops){
-    // Good Luck!
-    let final = busStops.reduce((a,b)=>a+b)
-    return final - sum(busStops.length[0])
+// var number = function(busStops){
+//     // Good Luck!
+//     let final = busStops.reduce((a,b)=>a+b)
+//     return final - sum(busStops.length[0])
     
-}
+// }
 //correct soln
 var number = function(busStops){
     var totalPeople = 0;

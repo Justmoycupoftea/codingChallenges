@@ -12,10 +12,10 @@
 //E: 8 -> (3+5) num % 3 & 5
 //P: num is % by 3 % 5, but only return numbers % by 3 || 5 and sum them
 
-function findSum(n) {
-    let final = n % 5 && n % 3
-    return final % 5 && final % 3 //didnt use a loop to loop through all the numbers
-  }
+// function findSum(n) {
+//     let final = n % 5 && n % 3
+//     return final % 5 && final % 3 //didnt use a loop to loop through all the numbers
+//   }
 
 //correct soln
 function findSum(n) {
