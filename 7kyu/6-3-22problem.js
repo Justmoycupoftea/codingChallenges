@@ -13,8 +13,8 @@
 //P: use a find method? can't sort
 
 function removeSmallest(numbers) {
-    let indexOfMin = numbers.indexOf(Math.min(...numbers));
-    return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+    let indexOfMin = numbers.indexOf(Math.min(...numbers)); //find smallest in array
+    return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)]; //remove lowest index of num if the same
 }
 
 //another soln
