@@ -21,7 +21,7 @@
 
 //correct soln
 var capitals = function (word) {
-var caps = [];
+var caps = []; //array for capitol letters
 for(var i = 0; i < word.length; i++) { //loop through the word
   if(word[i].toUpperCase() == word[i]) caps.push(i); //find position of capitol letter then push into array
 }//word[i] shows poisition of letter
