@@ -19,7 +19,7 @@
 // } wtf was i thinking
 
 function sumDigits(number) {
-    let arr = Math.abs(number).toString().split('')
+    let arr = Math.abs(number).toString().split('') //split the number and add, turn number positive then add
     let sum = 0;
     
     for(let i = 0; i < arr.length; i++)

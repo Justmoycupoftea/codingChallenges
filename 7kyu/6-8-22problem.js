@@ -35,7 +35,7 @@ function checkExam(array1, array2) {
       for (var i = 0; i < array2.length; i++){  //[i] checks each indvidual letter position 0,1,2,3 and that matches the letter
           if (array2[i] === ""){
              score += 0
-          } else if (array1[i] === array2[i]){
+          } else if (array1[i] === array2[i]){ //comparing correct answer to position of array1 with array2
               score += 4
           } else if (array1[i] !== array2[i]){
              score -= 1

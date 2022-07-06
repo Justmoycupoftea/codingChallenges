@@ -15,8 +15,8 @@ function removeUrlAnchor(url){
 //another soln
 function removeUrlAnchor(url){
     let string = ""
-    for(let i = 0; i < url.length; i++){
-      if(url[i] === "#") { break }
+    for(let i = 0; i < url.length; i++){ //loop through string
+      if(url[i] === "#") { break } //break # and return new string w/o # and new string
       string += url[i]
     }
     return string 

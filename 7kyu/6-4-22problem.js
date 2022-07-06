@@ -10,10 +10,10 @@
 // mxdiflg(a1, a2) --> 13
 //PREP on problem
 function mxdiflg(a1, a2) {
-    if (a1.length === 0 || a2.length === 0) return -1
-    let l1 = a1.map(str => str.length)
+    if (a1.length === 0 || a2.length === 0) return -1 //if length equals 0 return -1
+    let l1 = a1.map(str => str.length) //figuring out length of string
     let l2 = a2.map(str => str.length)
-    return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1))
+    return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1)) //...spread array find max of string 1 - min string 2 and 
 }
 
 //detailed soln

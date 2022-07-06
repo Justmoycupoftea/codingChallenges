@@ -15,8 +15,8 @@ function maskify(cc) {
 //// return masked string
 function maskify(cc) {
     cc = cc.split("");
-    for(var i = 0; i < cc.length - 4; i++){
-      cc[i] = "#";
+    for(var i = 0; i < cc.length - 4; i++){ //loop until last 4
+      cc[i] = "#"; //adding # to last 4 digits
   }
   
   cc = cc.join("");
