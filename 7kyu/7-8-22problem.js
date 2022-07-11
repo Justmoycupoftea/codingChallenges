@@ -11,6 +11,7 @@
 
 // gimme([5, 10, 14]) => 1
 // 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
+//review this problem
 let gimme = function (triplet) {
     // Clone the input array.
     let clonedArray = triplet.slice(0);
