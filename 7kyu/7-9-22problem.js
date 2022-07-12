@@ -11,3 +11,20 @@
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
 // Try to do it without using if statements!
+function arithmetic(a, b, operator){
+    //your code here!
+      if (operator === 'add') return a + b;
+    if (operator === 'subtract') return a - b;
+    if (operator === 'multiply') return a * b;
+    if (operator === 'divide') return a / b;
+  }
+//obj soln
+function arithmetic(a, b, operator) {
+    const obj = { //make an obj and call it
+      add: a + b,
+      subtract: a - b,
+      multiply: a * b,
+      divide: a / b
+    };
+    return obj[operator];
+  }

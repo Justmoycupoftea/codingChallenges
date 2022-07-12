@@ -14,7 +14,7 @@
 //review this problem
 let gimme = function (triplet) {
     // Clone the input array.
-    let clonedArray = triplet.slice(0);
+    let clonedArray = triplet.slice(0); //slice returns a shallow copy of an array into a new array object
     // Sort it in ascending order.
     clonedArray.sort(function(a, b){ //triplet is sorted
       return a-b
