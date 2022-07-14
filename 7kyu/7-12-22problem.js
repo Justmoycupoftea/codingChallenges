@@ -20,3 +20,9 @@ function twoOldestAges(ages){
     let s = ages.sort((a,b) => b-a);
     return [s[1],s[0]];
     }
+
+//my revised soln
+function twoOldestAges(ages){
+    let s = ages.sort((a,b) => a-b);
+  return [s[s.length-2],s[s.length-1]]; //had to put in bracket parenthesis didnt work
+}
