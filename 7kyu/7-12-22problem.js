@@ -26,5 +26,4 @@ function twoOldestAges(ages){
     let s = ages.sort((a,b) => a-b);
   return [s[s.length-2],s[s.length-1]]; //had to put in bracket parenthesis didnt work
 }
-//update soln
-//testing again
+//rework problem
