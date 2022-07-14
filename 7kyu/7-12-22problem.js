@@ -27,3 +27,4 @@ function twoOldestAges(ages){
   return [s[s.length-2],s[s.length-1]]; //had to put in bracket parenthesis didnt work
 }
 //update soln
+//testing
