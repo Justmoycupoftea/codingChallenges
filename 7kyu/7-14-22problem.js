@@ -21,8 +21,8 @@
 //         this.toString = function() { return this.name; }
 // }
 function declareWinner(fighter1, fighter2, firstAttacker) {
-    while (fighter1.health > 0 && fighter2.health > 0) {
-      fighter2.health -= fighter1.damagePerAttack;
+    while (fighter1.health > 0 && fighter2.health > 0) { //loop through fighters
+      fighter2.health -= fighter1.damagePerAttack; //subtract health with damage done
       fighter1.health -= fighter2.damagePerAttack;
     }
     
