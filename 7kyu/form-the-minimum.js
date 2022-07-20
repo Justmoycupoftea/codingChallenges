@@ -19,5 +19,5 @@
 function minValue(values){
     let arr = Array.from(new Set(values))
     //Returns a new iterator object that contains an array of [value, value] for each element in the Set object, in insertion order.
-    return parseInt(arr.sort().join(''))
+    return parseInt(arr.sort().join('')) //sort then combine num to be new num with smallest value, but hoe to not duplicate
   }
