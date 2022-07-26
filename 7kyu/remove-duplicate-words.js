@@ -22,4 +22,4 @@ const removeDuplicateWords = s => {
   }
 
   //another soln
-  const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
+  const removeDuplicateWordss = s => [...new Set(s.split(' '))].join(' ')
