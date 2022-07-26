@@ -11,3 +11,27 @@
 //R: return sum of min num in each array
 //E: [1,2,3]-> 1 [2,3,4] -> 2 1 + 2 = 3
 //P: filter through array and return lowest of each array then sum or push and sum
+//how tf do i sort nested arrays?!
+function sumOfMinimums(arr) {
+    const sumOfMinNumbers = [];
+    
+    arr.forEach((minNum) => sumOfMinNumbers.push(Math.min(...minNum))); //loop through array push min num into new array
+    //spread operator dont need sort, find the lowest num with spread operator and push
+    // sumOfMunNumbers = [2, 3, 4] => 2 + 3 + 4 = 9
+    return sumOfMinNumbers.reduce((x, y) => x + y);
+  }
+
+  //using for loop
+  function sumOfMinimums(arr) {
+    let total = 0;
+    
+    for (let i = 0; i < arr.length; i++){ //loops through each nested array
+     total += Math.min(...arr[i])
+    }
+    
+    return total;
+  }
+  //clean soln
+  function sumOfMinimums(arr) {
+    return arr.reduce((p, c) => p + Math.min(...c), 0);
+  }
