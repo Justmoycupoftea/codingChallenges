@@ -18,6 +18,18 @@ function factorial(n) {
     return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
+//another soln
+function factorial(n){
+  let answer = 1;
+  
+  while (n > 0) {
+    answer *= n;
+    n--;
+  }
+  
+  return answer;
+}
+
 //another prob
 // Given a string str, reverse it omitting all non-alphabetic characters.
 

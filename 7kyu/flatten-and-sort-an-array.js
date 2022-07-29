@@ -8,12 +8,12 @@
 
 //The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 function flattenAndSort(array) {
-    return [].concat(...array).sort((a,b) => a - b);
+    return [].concat(...array).sort((a,b) => a - b); //concat combines the two arrays
   }
 //another soln
 function flattenAndSort(array) {
     return array
-      .reduce((result, current) => [...result, ...current],[])
+      .reduce((result, current) => [...result, ...current],[]) //starting position empty array []
       .sort((a, b) => a - b)
       ;
   }
