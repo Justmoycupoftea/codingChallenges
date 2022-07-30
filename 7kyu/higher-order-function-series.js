@@ -16,4 +16,4 @@
 
 // The format of the strings will always be Europe and JavaScript.
 // All data will always be valid and uniform as in the example above.
-//P:
+//P: will there be any special characters or punctuation 
