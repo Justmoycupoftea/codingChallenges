@@ -17,3 +17,20 @@
 // The format of the strings will always be Europe and JavaScript.
 // All data will always be valid and uniform as in the example above.
 //P: will there be any special characters or punctuation 
+//R: return the nmber of javascript developers
+//E: see above
+//P: filter through and find 'Javascript' and return the number of js devs from Europe only
+function countDevelopers(list) {
+    return list.filter((obj) => obj.continent === 'Europe' && obj.language === 'JavaScript').length;
+  }
+//another soln
+function countDevelopers(list) {
+    return list.filter(x=>x.continent=='Europe'&& x.language=='JavaScript').length
+  }
+//another soln
+function countDevelopers(list) {
+    return list
+      .filter(dev => dev.language === "JavaScript")
+      .filter(dev => dev.continent === "Europe")
+      .length
+  }
