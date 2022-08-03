@@ -2,7 +2,7 @@
 
 // Example: (Input1, Input2 --> Output)
 // "a", 5 --> "aaaaa"
-//P: Will there be capitol letters and special characters?
+//P: Will there be capitol letters and special characters? what is coming in talk out loud for prep
 //R: return the string repeated x num times
 //E: 'a', 2 -> 'aa'
 //P: use repeat method string.repeat(x num times)
