@@ -16,3 +16,5 @@ function divisors(integer) {
     
     return divs.length ? divs : integer + ' is prime';
 };
+
+//work on july codewar solns
