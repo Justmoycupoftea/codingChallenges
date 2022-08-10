@@ -18,3 +18,4 @@ function divisors(integer) {
 };
 
 //work on july codewar solns
+//go through problems and comment out the lines
