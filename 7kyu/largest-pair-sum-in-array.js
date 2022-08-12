@@ -6,7 +6,14 @@
 // [99, 2, 2, 23, 19]  --> 122 (= 99 + 23)
 // Input sequence contains minimum two elements and every element is an integer.
 
-//P:
-//R:
-//E:
-//P:
+//P: will there be negative nums?
+//R:return the two highest nums and sum
+//E: 1,2,3 2+3=5
+//P: sort the nums and sum the two last numbers from the end that are sorted
+
+function largestPairSum (numbers) {
+    //TODO: Write your Code here
+    let nums = Array.from(numbers)
+    let sorted = nums.sort((a,b)=> a-b)
+    return sorted[sorted.length-2] + sorted[sorted.length-1] 
+  }
