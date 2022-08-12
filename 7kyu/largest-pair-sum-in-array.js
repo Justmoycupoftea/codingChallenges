@@ -17,3 +17,8 @@ function largestPairSum (numbers) {
     let sorted = nums.sort((a,b)=> a-b)
     return sorted[sorted.length-2] + sorted[sorted.length-1] 
   }
+  //other solns
+  function largestPairSum(numbers){
+    numbers.sort(function(a, b){ return b - a });
+    return numbers[0] + numbers[1];
+  }
