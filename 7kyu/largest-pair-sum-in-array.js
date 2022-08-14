@@ -13,7 +13,7 @@
 
 function largestPairSum (numbers) {
     //TODO: Write your Code here
-    let nums = Array.from(numbers)
+    let nums = Array.from(numbers) //didn't need this was already array
     let sorted = nums.sort((a,b)=> a-b)
     return sorted[sorted.length-2] + sorted[sorted.length-1] 
   }
