@@ -13,6 +13,7 @@
 // 3 --> 6
 // -10 --> 0
 //looking for numbers and print to make a tree?
+//couldn't prep the prob had trouble with finding the nth triangular number
 //P:
 //R:
 //E:
