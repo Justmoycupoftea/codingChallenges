@@ -12,6 +12,7 @@
 // 2 --> 3
 // 3 --> 6
 // -10 --> 0
+//looking for numbers and print to make a tree?
 //P:
 //R:
 //E:
