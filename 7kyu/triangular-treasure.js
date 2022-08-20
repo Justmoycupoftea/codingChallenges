@@ -18,3 +18,10 @@
 //E:
 //P:
 //making a triangle chirstmas tree like previous problem from eqleuont js hw
+function triangular( n ) {
+    let sum = 0; 
+      for(i = 0; i<=n ; i++){
+         sum += i;
+      }
+    return sum;
+  }
