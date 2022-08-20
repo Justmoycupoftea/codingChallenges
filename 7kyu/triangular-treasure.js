@@ -20,7 +20,7 @@
 //making a triangle chirstmas tree like previous problem from eqleuont js hw
 function triangular( n ) {
     let sum = 0; 
-      for(i = 0; i<=n ; i++){
+      for(i = 0; i<=n ; i++){ //looping through and pushing every number less than n to new array and that makes a triangle?
          sum += i;
       }
     return sum;
