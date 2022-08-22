@@ -10,7 +10,18 @@
 // NOTES
 // Vowels in this context refers to: a e i o u y (including upper case)
 // This is indexed from [1..n] (not zero indexed!)
-//P:
-//R:
-//E:
-//P:
+//P: will there be any special characters?
+//R: return position of vowels
+//E: joe -> [2,3]
+//P: set vowels of lower and upper into array, find indexof vowels + 1 since it starts at 0 and push into array
+
+function vowelIndices(word){
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
+    result = []
+    for (let i = 0; i < word.length; i++) {
+      if (vowels.indexOf(word[i]) != -1) {
+        result.push(i + 1);
+      }
+    }
+    return result;
+  }
