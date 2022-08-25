@@ -6,5 +6,15 @@
 //E: [2,1] -> [2]
 //P: sort the array and return the first one, but if the nums are the same length return the first one instead like in example
 function findLongest(array){
+    let biggestNum = 0;
 
+    for(var i = 0; i < array.length; i++) {
+    
+      if(array[i].toString().length > biggestNum.toString().length) {
+        biggestNum = array[i];
+      }
+      
+    }
+    
+    return biggestNum;
   }
