@@ -1,0 +1,1 @@
+//second focus of codewars for hunt
