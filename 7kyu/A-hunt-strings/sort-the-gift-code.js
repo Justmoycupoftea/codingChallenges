@@ -11,3 +11,6 @@
 // "pqksuvy"                     -- => "kpqsuvy"
 // "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
 //P:
+//R:
+//E:
+//P:
