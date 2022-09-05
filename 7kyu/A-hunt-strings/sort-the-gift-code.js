@@ -10,10 +10,11 @@
 // "abcdef"                      -- => "abcdef"
 // "pqksuvy"                     -- => "kpqsuvy"
 // "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
-//P:
-//R:
-//E:
-//P:
+//P: will there be any capitol letters? Any special characters? alphabetical characters up to 26
+//R: return string and organize in alphabet order
+//E: // "abcdef"                      -- => "abcdef"
+// "pqksuvy"                     -- => "kpqsuvy"
+//P: split the string, sort, and join, sorting works with letters and not only nums
 
 function sortGiftCode(code){
     return code.split('').sort().join('');
