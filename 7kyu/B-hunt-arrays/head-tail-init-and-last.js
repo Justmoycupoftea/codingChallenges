@@ -24,3 +24,16 @@
 
 // head([1,2,3,4,5]); => 1
 // tail([1,2,3,4,5]); => [2,3,4,5]
+
+function head(array) {
+    return array[0];
+  }
+  function tail(array) {
+    return array.slice(1);
+  }
+  function init(array) {
+    return array.slice(0, -1);
+  }
+  function last(array) {
+    return array[array.length-1];
+  }
