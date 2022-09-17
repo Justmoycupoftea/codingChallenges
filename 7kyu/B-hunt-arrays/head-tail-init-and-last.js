@@ -37,3 +37,11 @@ function head(array) {
   function last(array) {
     return array[array.length-1];
   }
+//another soln
+function head(a) {return a[0]}
+
+function last(a) {return a[a.length - 1]}
+
+function init(a) {return a.slice(0, -1)}
+
+function tail(a) {return a.slice(1)}
