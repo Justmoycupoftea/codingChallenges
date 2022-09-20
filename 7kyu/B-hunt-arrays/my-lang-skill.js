@@ -8,6 +8,16 @@
 // {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
 // {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
 
+function myLanguages(obj) {
+    let result = [];
+    for (let i in obj) {
+      if (obj[i] > 59) {
+        result.push(i);
+      }
+    }
+    return result.sort((a, b) => obj[b] - obj[a]);
+  }
+//another soln
 function myLanguages(results) {
-
-}
+    return Object.keys(results).filter(r => results[r] > 59).sort((a,b) => results[b] - results[a]);
+  }
