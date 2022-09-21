@@ -20,6 +20,7 @@
 // "(az, toto picaro zone kiwi)(az toto, picaro zone kiwi)(az toto picaro, zone kiwi)(az toto picaro zone, kiwi)"
 
 function partlist(arr) {
-    // your code
-    
+    return arr.map((result, i) => [arr.slice(0, i).join(' '), arr.slice(i).join(' ')]).slice(1);    
 }
+
+//another soln
