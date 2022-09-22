@@ -36,3 +36,5 @@ function partlist(arr) {
     
     return returnArray;
 }
+//reviewing codewar problems
+//go over and redo problems deleting ans
