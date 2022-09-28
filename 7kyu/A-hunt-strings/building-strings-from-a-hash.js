@@ -16,4 +16,10 @@ function solution(pairs){
 function solution(pairs) {
     return Object.keys(pairs).map(k => `${k} = ${pairs[k]}`).join(",");
   }
-  
+
+//practicing 
+function solution(pairs){
+    return Object.keys(pairs)
+    .map(function(k) { return k + ' = ' + pairs[k] })
+    .join(',');
+}
