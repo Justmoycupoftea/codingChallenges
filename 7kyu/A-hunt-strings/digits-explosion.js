@@ -9,3 +9,10 @@
 // should return :
 
 // "12222666666999999999"
+//P:
+//R:
+//E:
+//P:
+function explode(s) {
+    return "";
+  }
