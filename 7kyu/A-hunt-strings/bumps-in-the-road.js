@@ -5,10 +5,16 @@
 //working on rewriting this prob and soln
 //break down problems before solving
 //P: Will be intaking _ for flat and n for bumps
+//R: return woohoo if car encounters less than 15 bumps else >15 return car dead
+//E: x=16n -> 'car dead'
+//P: filter array for 'n' if >15 return 'car dead'
 
 function bump(x){
     const bump = x => x.split``.filter(e => e === 'n').length > 15 ? 'Car Dead' : 'Woohoo!';
 }
+
+const bump = x => x.split``.filter(e => e === 'n').length > 15 ? 'Car Dead' : 'Woohoo!';
+//the array is split then filter for 'n', .length > 15 return 'car dead' else 'woohoo'
 
 //another soln
 const bump = x => {
