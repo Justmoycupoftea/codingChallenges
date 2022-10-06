@@ -12,3 +12,7 @@ function switcheroo(x){
       if(e=='c') return 'c'
     }).join('');
   }
+//another soln
+function switcheroo(x){
+  return [...x].map(v => v == 'a' ? v = 'b' : v == 'b' ? v = 'a' : v).join('');
+}
