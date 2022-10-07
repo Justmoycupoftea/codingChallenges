@@ -29,3 +29,9 @@ function solution(pairs){
     //'k' would be the object and pairs[k] would be the value inside the object
     .join(',') //variables are joined forming ({a: 1, b: '2'}) // should return "a = 1,b = 2"
 }
+
+function solution(pairs) {
+  return Object.keys(pairs)
+  .map(function(k){return k + '=' + pairs[k]})
+  .join(',')
+}
