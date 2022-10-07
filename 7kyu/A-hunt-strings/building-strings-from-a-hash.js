@@ -35,3 +35,9 @@ function solution(pairs) {
   .map(function(k){return k + '=' + pairs[k]})
   .join(',')
 }
+
+function solution(pairs){
+  return Object.keys(pairs)
+  .map(function(k){return k + '=' + pairs[k]})
+  .join(',')
+}
