@@ -41,3 +41,10 @@ function solution(pairs){
   .map(function(k){return k + '=' + pairs[k]})
   .join(',')
 }
+
+function solution(pairs){
+  return Object.keys(pairs) //return object and properties inside
+  .map(function(k){return k + '=' + pairs[k]}) //maping so copying array and changing it to parameter returned + '=' and pairs[k] would be value inside object
+  //finally join
+  .join
+}
