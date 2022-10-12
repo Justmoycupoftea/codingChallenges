@@ -46,5 +46,13 @@ function solution(pairs){
   return Object.keys(pairs) //return object and properties inside
   .map(function(k){return k + '=' + pairs[k]}) //maping so copying array and changing it to parameter returned + '=' and pairs[k] would be value inside object
   //finally join
-  .join
+  .join(',')
+}
+
+function solution(pairs){
+  return Object.keys(pairs)
+  .map(function(k){return k + '=' + pairs[k]})
+  //copying array from object keys which would be a or b and the pairs[k] accessing key in object
+  //which would be the num so it would be a = 1 b = 2 and join with commas
+  .join(',')
 }
