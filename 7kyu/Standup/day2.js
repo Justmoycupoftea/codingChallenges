@@ -11,6 +11,7 @@
 
 //url trad no funny biz
 //str
+//doesn't work with 'www' only for some reason
 
 function parseDomainName(url){
     return url.replace('https://','').replace('http://','').replace('www','').split('.')[0]
@@ -32,4 +33,5 @@ function domainName(url){
                .replace('www.', '')
                .split('.')[0];
   }
+
   
