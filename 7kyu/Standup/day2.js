@@ -25,3 +25,11 @@ console.log(parseDomainName('http://github.com/carbonfive/raygun'), 'github')
 console.log(parseDomainName('http://www.zombie-bites.com'), 'zombie-bites')
 console.log(parseDomainName('https://www.cnet.com'), 'cnet')
 
+//another soln
+function domainName(url){
+    return  url.replace('http://', '')
+               .replace('https://', '')
+               .replace('www.', '')
+               .split('.')[0];
+  }
+  
