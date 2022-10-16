@@ -58,6 +58,11 @@ function solution(pairs){
   .join(',')
 }
 
+function solution(pairs){
+  return Object.keys(pairs)
+  .map(function(k){return k + '=' + pairs[k]})
+  .join(',')
+}
 //taking object and generating human readable string from its key/value pairs
 
 //will there be any negative nums? special letters? decimals?
