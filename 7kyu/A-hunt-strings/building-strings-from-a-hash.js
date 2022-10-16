@@ -59,6 +59,9 @@ function solution(pairs){
 }
 
 function solution(pairs){
+  //returning Object.keys of the pairs parameter
+  //map out out array and return function parameter k which we can make it any letter inside the object
+  //+ '=' and object keys of pairs parameter then we join and seperate with a comma
   return Object.keys(pairs)
   .map(function(k){return k + '=' + pairs[k]})
   .join(',')
