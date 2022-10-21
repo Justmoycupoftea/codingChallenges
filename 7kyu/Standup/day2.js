@@ -34,4 +34,3 @@ function domainName(url){
                .split('.')[0];
   }
 
-  
