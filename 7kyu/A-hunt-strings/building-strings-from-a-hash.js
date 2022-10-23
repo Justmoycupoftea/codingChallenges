@@ -76,4 +76,7 @@ function solution(pairs){
 
 function solution(pairs){
   // TODO: complete
+  return Object.keys(pairs)
+  .map(function(k){return k + '=' + pairs[k]})
+  .join(',')
 }

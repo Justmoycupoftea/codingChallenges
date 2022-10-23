@@ -20,3 +20,20 @@ Test.assertEquals(repeats([9, 10, 19, 13, 19, 13]),19);
 
 console.log(([4,5,7,5,4,8]),15)
 console.log([9, 10, 19, 13, 19, 13]),19
+
+//using a loop
+function repeats(arr) {
+    let seen = new Set();
+    let sum = 0;
+    
+    for (let v of arr) {
+      if (!seen.has(v)) {
+        seen.add(v);
+        sum += v;
+      } else {
+        sum -= v;
+      }
+    }
+    
+    return sum;
+  };
