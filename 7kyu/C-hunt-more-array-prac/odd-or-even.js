@@ -40,3 +40,8 @@
 function oddOrEven(array) {
     return array.reduce((sum, current) => sum + current, 0) % 2 ? 'odd' : 'even'
 }
+
+function oddOrEven(array){
+    return array.reduce((sum, current) => sum + current, 0) % 2 ? 'odd' : 'even'
+}
+//using reduce sum array of nums and mod 2 to determine if it's even or odd
