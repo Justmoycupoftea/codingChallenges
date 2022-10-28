@@ -55,3 +55,17 @@ function fizzBuzz(num){
 fizzBuzz(5) 
 fizzBuzz(9)
 fizzBuzz(15)
+
+function fizzBuzz(nums){
+    for(let i = 1; i<=num; i++){
+        if(i % 5 === 0 && i % 3=== 0){
+            return 'fizzbuzz'
+        }else if(i % 5 === 0){
+            return 'fizz'
+        }else if(i % 3 === 0 ){
+            return 'buzz'
+        }else{
+            return i
+        }
+    }
+}
