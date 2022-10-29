@@ -10,6 +10,7 @@
 // domainName("https://www.cnet.com") == "cnet
 
 //url trad no funny biz
+//any spaces, any special characters
 //str
 //doesn't work with 'www' only for some reason
 
