@@ -35,3 +35,6 @@ function domainName(url){
                .split('.')[0];
   }
 
+function parseDomainName(url){
+    return url.replace('https://', '').replace('http://', '').replace('www', '').split('.')[0]
+}
