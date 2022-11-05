@@ -38,3 +38,7 @@ function domainName(url){
 function parseDomainName(url){
     return url.replace('https://', '').replace('http://', '').replace('www', '').split('.')[0]
 }
+
+function parseURL(url){
+    return url.replace('http://', '').replace('https://', '').replace('wwww.', '').split(',')[0]
+}
