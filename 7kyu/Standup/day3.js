@@ -25,3 +25,11 @@ function mixNums(){
     return arr.reduce((a,c) => a + Number(c), 0)
     //use reduce to add initial plus new parameter
 }
+
+function mixNums(){
+    return arr.reduce((a,c) => a + Number(c), 0)
+}
+
+function mixer(){
+    return arr.reduce((a,c) => a + Number(c), 0)
+}
