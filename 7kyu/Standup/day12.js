@@ -9,6 +9,18 @@
 
 // Note: N may be 1 or less (in the latter case, the first array will be []).
 
+//
+
 function findDeletedNumber(arr, mixArr) {
-    // your code
+    //filter through array and filter every num in mixed array, return missing num 
+    // return arr.filter( n => mixArr.indexOf(n) === -1 )[0] || 0 //brute force soln
+
+    //checking lengths comes up a lot
+    if(arr.length === mixArr.length){
+        return 0
+    }else{
+        let arrSum = arr.reduce((a,c)=> a+c, 0)
+        let mixSum = mixArr.reduce((a,c)=> a+c, 0)
+        return arrSum - mixSum
+    }
   }
