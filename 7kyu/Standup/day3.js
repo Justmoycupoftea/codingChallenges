@@ -7,6 +7,7 @@
 // assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41); 
 
 //will there be neg nums, whole nums, decimals, strings, string of nums? array of string of nums make sure what it is
+//any funny biz like special characters will we be getting only nums?
 
 //return array of string and nums
 //do i need to replicate "two" into 2
@@ -32,6 +33,10 @@ function mixNums(){
 
 function mixer(){
     return arr.reduce((a,c) => a + Number(c), 0)
+}
+
+function mixer(){
+    return arr.reduce((a,c)=> a + Number(c), 0)
 }
 
 function mixer(){
