@@ -6,6 +6,9 @@
 // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
 //are we getting all nums, no spaces, no funny bizz, no strings
+//return even numbers in same order, sort odd nums
+//filter all the uneven nums, sort the uneven nums
+//return the new mapped array if num is even just return in same spot, and add all uneven nums into new array
 
 function sortArray(array) {
     //filter -> sort
@@ -21,6 +24,14 @@ function sortArray(array) {
   }
 console.log(sortArray([7, 1], '[1, 7]'))
 console.log(sortArray([5, 8, 6, 3, 4], '[3, 8, 6, 5, 4]'))
+
+function arraySort(nums){
+    let sortedOdd = nums.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+
+    return sorted.map(n => n % 2 === 0 ? n : sortedOdd.shift())
+}
+
+
 
 //loop method
 
