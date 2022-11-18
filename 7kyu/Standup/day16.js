@@ -9,6 +9,7 @@
 // The input array's length > 1
 
 //will there be any strings?
+//return the avg length of the array
 
 function averageLength() { 
     //get avg length -> rounded
