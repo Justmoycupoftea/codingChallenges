@@ -19,6 +19,6 @@ function averageLength() {
 
 function averageLength(){
     const averageLength = Math.round(arr.join('').length / arr.length)
-
+    //created new array so using each letter and div by length of arr
     return arr.map( str => str[0].repeat(avgLength))
 }
