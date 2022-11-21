@@ -4,4 +4,12 @@
 
 // --> "alpha beta gamma delta alpha beta gamma delta"
 
-const removeConsecutiveDuplicates = s => // your perfect code...
+//any special chars, spaces or anything
+
+
+function removeDupeWords(str){
+    //str -> split " " -> filter 
+    //join with spaces to get indivdual words
+    //split with spaces u compare words instead of letters
+    return str.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
+}
