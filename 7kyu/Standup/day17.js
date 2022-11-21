@@ -13,3 +13,5 @@ function removeDupeWords(str){
     //split with spaces u compare words instead of letters
     return str.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
 }
+
+const removeConsecutiveDuplicates = s => s.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
