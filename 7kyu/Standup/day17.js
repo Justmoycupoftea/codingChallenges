@@ -14,4 +14,5 @@ function removeDupeWords(str){
     return str.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
 }
 
+//one liner
 const removeConsecutiveDuplicates = s => s.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
