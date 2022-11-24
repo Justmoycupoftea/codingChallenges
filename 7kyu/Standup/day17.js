@@ -18,5 +18,9 @@ function removeMoreWords(str){
     return str.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
 }
 
+function removeWord(str){
+    return str.split(' ').filter((w,a,i) => w!= i[a-1]).join(' ')
+}
+
 //one liner
 const removeConsecutiveDuplicates = s => s.split(" ").filter((w,i,a) => w != a[i-1]).join(" ")
