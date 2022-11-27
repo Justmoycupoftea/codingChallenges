@@ -26,6 +26,7 @@
 //n = 15 -> 1,2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz
 //ask interviewer do we feel comfortable with these examples?
 //will i have solved the challenge if my function output these nums
+//return nums divisible by 3 & 5 and nums only divisible by 3 or 5 with fizzbuzz, fizz, and buzz
 
 function fizzBuzz(num){
     //for loop from 1 to num, pay attention to problem asked where interviewer ask to start at 1 when loops start at 0, increments start at 1 and not 0
