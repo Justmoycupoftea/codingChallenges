@@ -11,14 +11,50 @@
 
 function fizzbuzz(nums){
     for (let i = 1; i <= nums; i++){
-        if(i % 2 == 0 && i % 3 == 0){
+        if(i % 2 === 0 && i % 3 === 0){
             return 'fizzbuzz'
-        }else if(i % 2 == 0){
+        }else if(i % 2 === 0){
             return 'fizz'
-        }else if(i % 3 == 0){
+        }else if(i % 3 === 0){
             return 'buzz'
         }else{
             return i
         }
     }
 }
+
+function fizzbuzz(nums){
+    for (let i = 1; i <= nums; i++){
+        if(i % 2 === 0 && i % 3 === 0){
+            return 'fizzbuzz'
+        }else if(i % 2 === 0){
+            return 'fizz'
+        }else if(i % 3 === 0){
+            return 'buzz'
+        }else{
+            return i
+        }
+    }
+}
+
+//leons soln more optimized
+//recieve whole num, always whole num, no funny bizz
+
+function fizzBuzz(num){
+    // %2 -> fizz; %3 -> buzz; 2%&&%3 -> fizzBuzz; num
+    for(let i = 1; i <= num; i++){
+        //ask if i can just divide by 6 since 2 & 3 are multiples
+        if(i % 6 === 0){
+            console.log('fizzBuzz')
+        }else if(i % 2 === 0){
+            console.log('fizz')
+        }else if(i % 3 === 0){
+            console.log('buzz')
+        }else {
+            console.log(i)
+        }
+    }
+}
+
+console.log(fizzBuzz(6), '1,fizz,buzz,fizz,5,fizzBuzz')
+console.log(fizzBuzz(8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
