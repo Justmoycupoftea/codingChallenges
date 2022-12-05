@@ -10,6 +10,12 @@ function reverseStr(str){
     return str.split('').reverse().join('')
 }
 
+
+function reverseStr(str){
+    //don't forget to use '' in split or else it'll split the word and not letters
+    return str.split('').reverse().join('')
+}
+
 console.log(reverseStr('bob'))
 console.log(reverseStr('hello'))
 console.log(reverseStr('shoes'))
