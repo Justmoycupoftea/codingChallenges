@@ -9,7 +9,7 @@ A repository filled with codewars challenges (kata) and LeetCode. Completed over
 
 **Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
 
-Everyday, the first thing I do is solve a Codewar! 
+Everyday, the first thing I do is solve a Codewar or LeetCode! 
 
 ## Optimizations
 
