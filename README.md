@@ -1,8 +1,9 @@
 # CodeWars Challenges: <a target="_blank" href="https://www.codewars.com/users/JustyMoy" >Visit Here</a> 
+LeetCode
 
 ![alt tag](https://user-images.githubusercontent.com/87396968/178885057-8bf59822-dc2d-4d9b-9c3b-9d70221e62b8.png)
 
-A repository filled with codewars challenges (kata). Completed over 100+ challenges and Push 5 solutions every week.
+A repository filled with codewars challenges (kata) and LeetCode. Completed over 100+ challenges and Push 5 solutions every week.
 
 ## How It's Made:
 
