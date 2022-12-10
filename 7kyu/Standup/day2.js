@@ -42,3 +42,10 @@ function parseDomainName(url){
 function parseURL(url){
     return url.replace('http://', '').replace('https://', '').replace('wwww.', '').split(',')[0]
 }
+
+function domainName(url){
+    return  url.replace('http://', '')
+               .replace('https://', '')
+               .replace('www.', '')
+               .split('.')[0];
+  }
