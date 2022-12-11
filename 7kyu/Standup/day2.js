@@ -23,6 +23,21 @@ function parseDomainName(url){
 
 }
 
+function parseDomainName(url){
+    return url.replace('https://','').replace('http://','').replace('www','').split('.')[0]
+
+    //replace the stuff upfront
+
+    //split grabbing the first value and return the name of website
+
+}
+
+function parseDomainName(url){
+    return url.replace('https://, ','').replace('http://','').replace('www','').split('.')[0]
+    //if we dont add comma in '' then it will replace the entire url and not the beginning
+    //we're splitting at the dot . and at the beginning so we are returned with url with http or www and the firstword only
+}
+
 console.log(parseDomainName('http://github.com/carbonfive/raygun'), 'github')
 console.log(parseDomainName('http://www.zombie-bites.com'), 'zombie-bites')
 console.log(parseDomainName('https://www.cnet.com'), 'cnet')
