@@ -13,3 +13,17 @@
 // Input: nums = [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+function containsDupes(arr){
+    //creating hash map for problem
+    let numsMap = {}
+    for(let i = 0; i < arr.length; i++){
+        let num = arr[i]
+        if(numsMap[num]){
+            //num already in object so its a duplicate
+            return true
+        }else{
+            numsMap[num] = true
+        }
+    }
+    return false
+}
