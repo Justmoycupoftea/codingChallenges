@@ -6,6 +6,12 @@
 //  });
 // });
 
+//prep
+//will it always be positive nums, any neg nums, special chars, empty strings
+//return all the pairs that add up to the sum
+//([1, 2, 2, 3, 4], 4), [[2, 2], [3, 1]]);
+//use a hash map to add up all nums and return sum
+
 function twoSum(arr, sum){
     //expecting returned array
     const pairs = []
