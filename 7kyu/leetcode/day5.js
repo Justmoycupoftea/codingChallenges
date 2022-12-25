@@ -1,6 +1,10 @@
 // Given a magazine of words and a ransom note, determine if it’s possible to “cut out” and create the ransom note from the magazine words.
 
 //make hash map
+//will there be empty strings, spec chars, capitolized letters, any nums
+//return a ransom note with magazine words
+//match a note 'hello' to magazine 'hello' its true so we can make a note else false
+//setup hash map, split the note, split the magazine, new note that checks if the letters are in the magazine or note, return true if possible
 
 const magazine =
  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
