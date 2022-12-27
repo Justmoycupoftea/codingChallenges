@@ -11,6 +11,13 @@
 // Input: nums = [2,2,1,1,1,2,2]
 // Output: 2
 
+//will there be negative nums, decimals, special chars, strings, anything other than a num, empty arrays
+//return the majority num
+// Input: nums = [3,2,3]
+// Output: 3
+// Example 2:
+//make hash map to return the most repeated num
+
 function majorityElement(arr){
     let elem = {},
         count = 0,
