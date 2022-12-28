@@ -38,3 +38,24 @@ function majorityElement(arr){
 
     return majElem
 }
+
+function majorityElement(arr){
+    let elem = {},
+        count = 0,
+        majElem = [0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+    }
+
+    for(const n in elem){
+        if(elem[n] > count){
+            count = elem[n]
+            majElem = n
+        }
+    }
+
+    return majElem
+
+
+}
