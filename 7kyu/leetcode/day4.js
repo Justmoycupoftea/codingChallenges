@@ -59,3 +59,46 @@ function majorityElement(arr){
 
 
 }
+
+//brute force using count
+function majorityElement(arr){
+    let elem = {},
+    count = 0,
+    //how many times a num appears that what count id for, keeps track majority element
+    //build out an object to keep track of count
+    majElem = arr[0] //whatever majority element is, it fills heres
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+        //num is the parameter, loops through to count how many times a num repeats
+        //keeps track of how many times a element pops up
+    }
+
+    for(const n in elem){
+        //look for ea property in elem
+        if(elem[n] > count){
+            count = elem[n]
+            majElem =[n]
+            //looping through object finding which one occurs the most
+        }
+    }
+    return majElem
+
+}
+
+//using no count
+function majorityElement(arr){
+    arr.sort()
+    return arr[Math.floor(arr.length/2)]
+    //this works too
+
+    let elem = {}
+    majElem = arr[0]
+
+    for(const num of arr){
+        elem[num] = elem[num] + 1 || 1
+        elem[num] > arr.length / 2
+        //shorter way divide length
+        //becomes majority element, a num that is taking up more than half of the array
+    }
+}
