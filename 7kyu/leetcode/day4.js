@@ -91,6 +91,8 @@ function majorityElement(arr){
     arr.sort()
     return arr[Math.floor(arr.length/2)]
     //this works too
+    //the algo behind sort is quicksort
+    //more optimized, google chrome v8 uses quicksort, firefox uses mergesort
 
     let elem = {}
     majElem = arr[0]
