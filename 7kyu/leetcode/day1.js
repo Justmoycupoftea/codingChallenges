@@ -18,6 +18,13 @@
 // jewels and stones consist of only English letters.
 // All the characters of jewels are unique.
 
+//will there be empty strings, spaces, special characters, nums
+//return the num of repeated letter the most
+//// Input: jewels = "aA", stones = "aAAbbbb"
+// Output: 3
+// Example 2:
+//use a hash map compare the letters to the letters that repeat the most, loop through
+
 function findJewels(jewels, stones) {
     const map = {}
     let count = 0
