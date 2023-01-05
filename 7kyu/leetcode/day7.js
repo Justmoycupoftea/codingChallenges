@@ -31,12 +31,14 @@ console.log(fib(2),1)
 console.log(fib(4),3)
 
 //will there be any neg nums, spec chars, spaces, decimals, strings, or empty arrays
+//you want to grab two previous nums to generate the next
 
 function fib(n){
     let arr = [0,1]
     for(let i = 2; i <= n; i++){
         arr[i] = arr[i - 1] + arr[i - 2]
     }
+    //i - 1 grabs first num then second num is i - 2
     return arr[n]
 }
 
@@ -44,7 +46,10 @@ function fib(n){
     let arr = [0,1]
     for(let i = 2; i <= n; i++){
         arr[i] = arr[i - 1] + arr[i - 2]
+        //add previous values to generate next value in sequence, array index position is returned along with the num at the index
     }
     return arr[n]
 }
+
+//
 
