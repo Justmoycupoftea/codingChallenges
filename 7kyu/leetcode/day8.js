@@ -28,6 +28,8 @@ function fib(n){
     return arr[n]
 }
 
+//recursive way to find a base case, helps solve algo problems
+//function finds file then stops, like our computer
 function countDown(n){
     if (n === 0) {
         console.log('donezo!');
@@ -36,3 +38,4 @@ function countDown(n){
         countDown(n - 1);
     }
 }
+
