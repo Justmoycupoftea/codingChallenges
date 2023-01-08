@@ -42,4 +42,5 @@ function findJewels(jewels, stones) {
 };
 
 //leetcode practice
+//hash maps
 
