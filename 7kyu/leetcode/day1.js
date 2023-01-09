@@ -44,3 +44,18 @@ function findJewels(jewels, stones) {
 //leetcode practice
 //hash maps
 
+function findJewels(jewels, stones) {
+    const map = {}
+    let count = 0
+
+    for(const jewel of jewels){
+        map[jewel] = true
+    }
+
+    for(const stone of stones){
+        if( map[stone] ){
+            count++
+        }
+    }
+    return count
+}
