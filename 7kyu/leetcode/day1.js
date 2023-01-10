@@ -47,11 +47,11 @@ function findJewels(jewels, stones) {
 function findJewels(jewels, stones) {
     const map = {}
     let count = 0
-
+    //compare new item to what exists
     for(const jewel of jewels){
         map[jewel] = true
     }
-
+    //checks exisiting item in array with new item on outside
     for(const stone of stones){
         if( map[stone] ){
             count++
