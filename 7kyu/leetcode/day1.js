@@ -77,3 +77,20 @@ function findJewels(jewels, stones) {
     }
     return count
 };
+
+
+function findJewels(jewels, stones) {
+    const map = {}
+    let count = 0
+
+    for(const jewel of jewels){
+        map[jewel] = true
+    }
+
+    for(const stone of stones){
+        if( map[stone] ){
+            count++
+        }
+    }
+    return count
+};
