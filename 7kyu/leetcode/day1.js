@@ -62,35 +62,18 @@ function findJewels(jewels, stones) {
 
 //more practice here
 
-function findJewels(jewels, stones) {
+function findJewel(j, s) {
     const map = {}
     let count = 0
 
-    for(const jewel of jewels){
-        map[jewel] = true
+    for(const je of j){
+        map[je] = true
     }
 
-    for(const stone of stones){
+    for(const st of s){
         if( map[stone] ){
             count++
         }
     }
     return count
-};
-
-
-function findJewels(jewels, stones) {
-    const map = {}
-    let count = 0
-
-    for(const jewel of jewels){
-        map[jewel] = true
-    }
-
-    for(const stone of stones){
-        if( map[stone] ){
-            count++
-        }
-    }
-    return count
-};
+}
