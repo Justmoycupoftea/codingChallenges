@@ -77,3 +77,19 @@ function findJewel(j, s) {
     }
     return count
 }
+
+function findJewel(j, s) {
+    const map = {}
+    let count = 0
+
+    for(const je of j){
+        map[je] = true
+    }
+
+    for(const st of s){
+        if( map[stone] ){
+            count++
+        }
+    }
+    return count
+}
