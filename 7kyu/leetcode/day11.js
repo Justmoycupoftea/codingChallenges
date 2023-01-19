@@ -22,3 +22,10 @@ function factorial(n){
 //         3 * factorial (3 - 1)
 //             2 * factorial (2 - 1)
 //get to factorial of 1 and bubble back up
+
+function factorial(n){
+    if (n < 2){
+        return 1
+    }
+    return n * factorial(n - 1)
+}
