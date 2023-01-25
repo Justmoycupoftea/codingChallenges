@@ -53,3 +53,8 @@ function factorial(n){
         return 1
     }
 }
+function factorial(n){
+    if (n < 2){
+        return 1
+    }
+}
