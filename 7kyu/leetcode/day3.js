@@ -27,3 +27,18 @@ function containsDupes(arr){
     }
     return false
 }
+
+function containsDupes(arr){
+    //creating hash map for problem
+    let numsMap = {}
+    for(let i = 0; i < arr.length; i++){
+        let num = arr[i]
+        if(numsMap[num]){
+            //num already in object so its a duplicate
+            return true
+        }else{
+            numsMap[num] = true
+        }
+    }
+    return false
+}
