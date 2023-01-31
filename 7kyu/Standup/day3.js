@@ -45,3 +45,6 @@ function mixer(){
 function mixer(){
     return arr.reduce((a,c)=> a + Number(c), 0)
 }
+function mixer(){
+    return arr.reduce((a,c)=> a + Number(c), 0)
+}
