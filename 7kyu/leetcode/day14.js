@@ -18,3 +18,12 @@ function mygcd(a,b){
     }
     return mygcd(b, a % b)
 }
+
+//recursion
+
+function mygcd(a,b){
+    if(b === 0){
+        return a
+    }
+    return mygcd(b, a % b)
+}
