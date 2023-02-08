@@ -25,3 +25,33 @@ var Queue = function() {
   Queue.prototype.size = function() {
     // return number of items in queue so far
   };
+
+  //soln walkthrough and breakdown
+
+  class Stack {
+    constructor(){
+      this.storage = {}
+      this.size = 0
+    }
+    push(element){
+      this.size++
+      this.storage[this.size] = element
+    }
+    pop(){
+      let removed = this.storage[this.size]
+      delete this.storage[this.size]
+      this.size--
+      return removed
+    }
+    peek(){
+      return this.storage[this.size]
+    }
+  }
+  
+  const stack = new Stack()
+  
+  stack.push('apple')
+  stack.push('banana')
+  stack.push('plum')
+  
+  stack.pop()
