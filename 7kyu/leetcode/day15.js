@@ -28,33 +28,33 @@ var Queue = function() {
 
   //soln walkthrough and breakdown
 
-  class Stack {
-    constructor(){
+  class Queue {
+    constructor() {
       this.storage = {}
-      this.size = 0
+      this.head = 0
+      this.tail = 0
     }
-    push(element){
-      this.size++
-      this.storage[this.size] = element
+    enqueue(element) {
+      this.storage[this.tail] = element
+      this.tail++
     }
-    pop(){
-      let removed = this.storage[this.size]
-      delete this.storage[this.size]
-      this.size--
+    dequeue() {
+      let removed = this.storage[this.head]
+      delete this.storage[this.head]
+      this.head++
       return removed
-    }
-    peek(){
-      return this.storage[this.size]
     }
   }
   
-  const stack = new Stack()
+  const queue = new Queue()
   
-  stack.push('apple')
-  stack.push('banana')
-  stack.push('plum')
+  queue.enqueue('apple')
+  queue.enqueue('banana')
+  queue.enqueue('blueberry')
   
-  stack.pop()
+  queue.dequeue('apple')
+  
+  queue.enqueue('strawberry')
 
   //practice
 
