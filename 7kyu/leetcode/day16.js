@@ -57,3 +57,6 @@ class Queue {
   queue.dequeue('apple')
   
   queue.enqueue('strawberry')
+
+  //linked list problem
+  //data points to the next bit of data continiously
