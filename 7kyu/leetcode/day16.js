@@ -80,7 +80,7 @@ class Queue {
     }
   }
   
-  const queue = new Queue()
+  const queue1 = new Queue()
   
   queue.enqueue('apple')
   queue.enqueue('banana')
