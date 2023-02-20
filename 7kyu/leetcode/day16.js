@@ -110,4 +110,4 @@ class Queue {
     }
   }
   
-  const queue = new Queue()
+  const queue2 = new Queue()
