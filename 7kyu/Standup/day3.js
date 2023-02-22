@@ -48,3 +48,8 @@ function mixer(){
 function mixer(){
     return arr.reduce((a,c)=> a + Number(c), 0)
 }
+
+//returning sum of array
+function mixing(){
+    return arr.reduce((a,c) => a + Number(c), 0)
+}
