@@ -47,3 +47,9 @@ function getAvg(marks){
 
   return Math.floor(sum / marks.length)
 }
+
+function getAvg(marks){
+  let sum = marks.reduce((a,c) => a + c)
+
+  return Math.floor(sum / marks.length)
+}
