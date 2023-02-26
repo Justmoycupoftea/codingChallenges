@@ -37,3 +37,11 @@ function repeats(arr) {
     
     return sum;
   };
+
+  function repeats(arr){
+    //take arr and filter arr to find single values -> filter single values -> reduce
+    //index of num is last index of num
+    return arr.filter(n => arr.indexOf(n) === arr.lastIndexOf(n)).reduce((a,c) => a + c, 0) 
+    //filters out single of indvidual values
+    //first array will give out 7 and 8 
+}
