@@ -42,3 +42,17 @@ class LinkedList {
   list.append(1)
   list.append(2)
   list.append(3)
+
+//working on reverse list node
+
+reverseList(){
+    let current = this.head
+    let prev = null
+    while (current) {
+       const temp = current.next
+       current.next = prev
+       prev = current
+       current = temp
+   }
+   return prev
+ }
