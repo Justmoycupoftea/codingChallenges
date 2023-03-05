@@ -45,6 +45,12 @@ class LinkedList {
 
 //working on reverse list node
 
+
+Class Linkedlist2{
+    constructor () {
+        this.head = this.tail = null
+      }
+
 reverseList(){
     let current = this.head
     let prev = null
@@ -56,3 +62,5 @@ reverseList(){
    }
    return prev
  }
+
+}
