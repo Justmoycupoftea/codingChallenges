@@ -16,3 +16,9 @@ function arrayDiff(a, b) {
     return a.filter(n => !newSet.has(n) )
 
 }
+
+function arrayDiff1(a, b) {
+    let newSet1 = new Set(b)
+    //filter everything in a and compare what it doesn't have in b, return the different elements in b
+    return a.filter(n => !newSet1.has(n))
+}
