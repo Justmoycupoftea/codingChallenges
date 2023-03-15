@@ -99,13 +99,27 @@ function fizzBuzz(nums){
 }
 
 function fizzbuzz(nums){
-    for (let i = 1; i <= num; i++){
+    for (let i = 1; i <= nums; i++){
         if(i % 5 === 0 && i % 3 === 0){
             return 'fizzbuzz'
         }else if(i % 5 === 0){
             return 'fizz'
         }else if(i % 3 === 0){
             return 'buzz'
+        }else{
+            return i
+        }
+    }
+}
+
+function fizzBuzz1(nums) {
+    for(let i = 1; i<=nums; i++){
+        if (i % 5 === 0 && i % 3 === 0){
+            return 'fizzbuzz'
+        }else if (i % 5 === 0){
+            return 'buzz'
+        }else if(i % 3 === 0){
+            return 'fizz'
         }else{
             return i
         }
