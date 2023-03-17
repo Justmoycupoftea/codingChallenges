@@ -15,6 +15,12 @@ function solve(arr) {
     // return arr.map(sa => new Set(sa).size).reduce((a,c)=>a*c, 1)
 };
 
+function solve(arr) {
+    return arr.map(sa => new Set(sa).size).reduce((a,c)=> a + c, 1)
+    //mapping new array
+    //adding up new array and returning the array as a set
+}
+
 //does your company use ES6 would you like me to leave as is or make it a one liner?
 
 // const solve = arr => arr.reduce((a,c) => a * new Set(c).size, 1)

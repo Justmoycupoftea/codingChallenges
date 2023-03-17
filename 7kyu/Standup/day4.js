@@ -30,6 +30,14 @@ console.log((getAverage([1,1,1,1,1,1,1,2]),1))
 
 //practice
 
+function getAvg(marks1){
+  //use reduce method to add up nums
+  let sum = marks1.reduce((a,c) => a + c)
+  //return with Math.floor bc we need to round down in integers
+  //to find avg add up and divde by amount of nums
+  return Math.floor(sum / marks1.length)
+}
+
 function getAvg(marks){
   let sum = marks.reduce((a,c) => a + c)
 

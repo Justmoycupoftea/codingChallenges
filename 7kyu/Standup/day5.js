@@ -21,6 +21,13 @@ Test.assertEquals(repeats([9, 10, 19, 13, 19, 13]),19);
 console.log(([4,5,7,5,4,8]),15)
 console.log([9, 10, 19, 13, 19, 13]),19
 
+//prac
+function repeats1(arr1){
+  //take arr and filter arr to find single values -> filter single values -> reduce and add up single values
+  arr1.filter(n => arr1.indexOf(n) === arr1.lastIndexOf(n).reduce((a,c) => a + c, 0))
+  //index of n finds the number that occurs once bc were adding the nums that occur once together
+}
+
 //using a loop
 function repeats(arr) {
     let seen = new Set();

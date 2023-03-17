@@ -23,6 +23,12 @@ function parseDomainName(url){
 
 }
 
+function parseDomainName1(url){
+    return url.replace('https://', '').replace('http://','').replace('wwww','').split('.')[0]
+
+    //return parameter replacing the beginning '[0]' with empty ''
+}
+
 function parseDomainName(url){
     return url.replace('https://','').replace('http://','').replace('www','').split('.')[0]
 

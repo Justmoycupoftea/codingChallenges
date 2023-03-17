@@ -22,6 +22,14 @@ function sumMix(){
 console.log(sumMix([9, 3, '7', '3']), 22)
 console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42)
 
+function sumMix(){
+    return arr.reduce((a,c) => a + Number(c), 0)
+
+    //use reduce medthod for adding, theres some letters so we have to turn everythin to num using Number
+    //put a 0 bc were starting at 0
+    //.reduce((a,c)=> a + Number(c),0)
+}
+
 function mixNums(){
     return arr.reduce((a,c) => a + Number(c), 0)
     //use reduce to add initial plus new parameter
