@@ -9,6 +9,13 @@
 
 
 
+//will it always be arrays, pos nums, whole nums, neg nums? special chars?
+
+function arrDiff(a,b) {
+    
+}
+
+
 function arrayDiff(a, b) {
 //   if(b.length === 0){ return a }
 //understand set pops up in interview a bit
