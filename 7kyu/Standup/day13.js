@@ -14,8 +14,21 @@
 function arrDiff(a,b) {
 if(a.length === 0 || b.length === 0){ return a }
 
+//filter out values that appear in b
+
+return a.filter(function(x) {return b.indexOf(x) == -1;})
+
 }
 
+function arrDiff(a,b) {
+    //using sets
+    let newSet = new Set(b)
+    //check if each num is not in the set
+    //filter out values that new not appear in this set 'n'
+    return a.filter(n => !newSet.has(n))
+    //!newSet.has(n) goes thru array checks if b is in a and returns filtered a
+    //has and set happens in constant time vs array in linear time
+    }
 
 function arrayDiff(a, b) {
 //   if(a.length === 0 || b.length === 0){ return a }
