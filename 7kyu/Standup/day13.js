@@ -12,13 +12,15 @@
 //will it always be arrays, pos nums, whole nums, neg nums? special chars?
 
 function arrDiff(a,b) {
-    
+if(a.length === 0 || b.length === 0){ return a }
+
 }
 
 
 function arrayDiff(a, b) {
-//   if(b.length === 0){ return a }
+//   if(a.length === 0 || b.length === 0){ return a }
 //understand set pops up in interview a bit
+
     let newSet = new Set(b)
     return a.filter(n => !newSet.has(n) )
 
