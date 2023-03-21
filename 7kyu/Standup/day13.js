@@ -28,6 +28,7 @@ function arrDiff(a,b) {
     return a.filter(n => !newSet.has(n))
     //!newSet.has(n) goes thru array checks if b is in a and returns filtered a
     //has and set happens in constant time vs array in linear time
+    //sets more in modern problems
     }
 
 function arrayDiff(a, b) {
@@ -48,5 +49,15 @@ function arrayDiff1(a, b) {
 function arrayDiff1(a, b) {
     let newSet1 = new Set(b)
     //filter everything in a and compare what it doesn't have in b, return the different elements in b
+    return a.filter(n => !newSet1.has(n))
+}
+
+function checkDiff(a,b) {
+    //declearing a a set
+    let newSet1 = new Set (b)
+
+    //filter everything out of a that is in 'b' the second param
+    //and return a new filtered a
+    //use .has in sets bc of constant time better than linear
     return a.filter(n => !newSet1.has(n))
 }
