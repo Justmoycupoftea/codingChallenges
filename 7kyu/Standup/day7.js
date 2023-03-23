@@ -27,3 +27,7 @@ function solve(arr) {
 
 console.log(solve([[1,2],[4],[5,6]]), '4')
 console.log(solve([[1,2],[4,4],[5,6,6]]), '4')
+
+function solve(arr){
+    return arr.map(n => new Set(n).reduce((a,c)=> a + c, 1))
+}
