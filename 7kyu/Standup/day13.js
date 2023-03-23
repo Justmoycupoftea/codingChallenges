@@ -53,11 +53,16 @@ function arrayDiff1(a, b) {
 }
 
 function checkDiff(a,b) {
-    //declearing a a set
+    //declearing a new set using the second param 'b'
     let newSet1 = new Set (b)
 
     //filter everything out of a that is in 'b' the second param
     //and return a new filtered a
     //use .has in sets bc of constant time better than linear
     return a.filter(n => !newSet1.has(n))
+}
+
+function checkDiff(a,b) {
+    let newSet = new Set(b)
+    return a.filter(n => !newSet.has(n))
 }
