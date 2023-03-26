@@ -62,6 +62,7 @@ function checkDiff(a,b) {
     return a.filter(n => !newSet1.has(n))
 }
 
+//sets use constant time and not linear so faster
 function checkDiff(a,b) {
     let newSet = new Set(b)
     return a.filter(n => !newSet.has(n))
