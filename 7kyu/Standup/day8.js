@@ -23,6 +23,10 @@ function nthSmallest(arr, n){
 
 }
 
+function nsmall(arr, n) {
+    return arr.sort((a,b)=> a-b[n-1])
+}
+
 console.log(nthSmallest([3,1,2],2), '2')
 console.log(nthSmallest([177,225,243,-169,-12,-5,2,92],5), '92')
 
