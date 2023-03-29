@@ -39,3 +39,7 @@ function solveThis(arr) {
 function solve1(arr) {
     return arr.map(n => new Set(n).reduce((a,c)=> a + c, 1))
 }
+
+function solve1(arr) {
+    return arr.map(n => new Set(n).reduce((a,c)=> a + c, 1))
+}
