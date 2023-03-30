@@ -9,12 +9,13 @@
 
 // Input >> Output Examples
 // arr=[3,1,2]            n=2    ==> return 2 
-// arr=[15,20,7,10,4,3]   n=3    ==> return 7 
-// arr=[2,169,13,-5,0,-1] n=4    ==> return 2 
+// arr=[15,20,7,10,4,3]   n=3    ==> return 7 //n would be THIRD SMALLEST element which wud be 7
+// arr=[2,169,13,-5,0,-1] n=4    ==> return 2 //looking for 4th element
 // arr=[2,1,3,3,1,2],     n=3    ==> return 2 
 // nthSmallest({177,225,243,-169,-12,-5,2,92} ,5) ==> return (92) 
 
-//lexical graphical
+//lexical graphical sorts alphabet helps with sorting which is under the hood of sorting
+//a comes before b so nums are rearrange from highest to lowest
 
 function nthSmallest(arr, n){
     //sort arr
@@ -24,14 +25,17 @@ function nthSmallest(arr, n){
 }
 
 function nsmall(arr, n) {
-    return arr.sort((a,b)=> a-b[n-1])
-
+    return arr.sort((a,b)=> a-b)[n-1]
 }
 
-function nsmall(arr, n) {
-    return arr.sort((a,b)=> a-b[n-1])
-    
+function findSmallN(arr, n) {
+    //taking in an array, so i need to sort it
+    //find nth num, look for index, take num and -1 so we can find numb in that index
+    return arr.sort((a,b)=> a - b)[n-1]
+    //use bracket notation to locate num in index, since num element would be one lower than the index
 }
+
+
 console.log(nthSmallest([3,1,2],2), '2')
 console.log(nthSmallest([177,225,243,-169,-12,-5,2,92],5), '92')
 
