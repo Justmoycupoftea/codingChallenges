@@ -39,6 +39,11 @@ function findSmallN(arr, n) {
     //use bracket notation to locate num in index, since num element would be one lower than the index
 }
 
+function nsmally(arr, n) {
+    return arr.sort((a,b)=> a - b)[n-1]
+    //[n-1] subtracts 1 from index to find element
+}
+
 
 console.log(nthSmallest([3,1,2],2), '2')
 console.log(nthSmallest([177,225,243,-169,-12,-5,2,92],5), '92')
