@@ -40,6 +40,12 @@ function isPalindrome(str) {
     return str === reversed;
   }
 
+  function isPali(str){
+    let newWord = str.split('').reverse().join('')
+    return newWord === str;
+    
+  }
+
   
   console.log(isPalindrome("racecar")); // true
   console.log(isPalindrome("hello")); // false
