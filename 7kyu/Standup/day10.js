@@ -27,8 +27,6 @@ function stringTransformer(str) {
 
     return transformedStr
 
-
-
   }
 
 console.log(stringTransformer("example input"), "iNPUT eXAMPLE")
