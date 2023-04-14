@@ -25,3 +25,23 @@ console.log(reversedStr); // Output: !dlrow ,olleH
 
 // When we call the reverseString function with the string "Hello, world!", it returns the reversed string "!dlrow ,olleH".
   
+function reverseString(str) {
+    let charMap = new Map();
+    let reversedString = "";
+  
+    for (let i = 0; i < str.length; i++) {
+      let char = str.charAt(i);
+      charMap.set(i, char);
+    }
+  
+    for (let i = str.length - 1; i >= 0; i--) {
+      reversedString += charMap.get(i);
+    }
+  
+    return reversedString;
+  }
+  
+  let str = "Hello, world!";
+  let reversedStr = reverseString(str);
+  
+console.log(reversedStr); // Output: !dlrow ,olleH
