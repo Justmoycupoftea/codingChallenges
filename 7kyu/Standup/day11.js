@@ -56,3 +56,6 @@ return x.split('').sort((a,b)=> a.charCodeAt(a.length - 1) - b.charCodeAt(b.leng
 //comparing letters to each other with sort
 
 }
+
+//doing in ES6 one line
+const last = ( l ) => l.split(' ').sort((a,b)=> a.slice(-1) > b.slice(-1))
