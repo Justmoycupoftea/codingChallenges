@@ -35,3 +35,15 @@ function findDeletedNumber(arr, mixArr) {
 // If no number was deleted from the starting array, your function should return the int 0.
 
 // Note: N may be 1 or less (in the latter case, the first array will be []).
+
+//using filter and indexOf is using a loop inside a loop making it linear so slow
+
+function missNum(arr, mixArr) {
+    if (arr.length === mixArr.length){
+        return 0
+    }else{
+        let arrSum = arr.reduce((a,b)=> a + b, 0)
+        let mixArrSum = mixArr.reduce((a,b)=> a + b, 0)
+        return arrSum - mixArrSum
+    }
+}
