@@ -38,12 +38,25 @@ function findDeletedNumber(arr, mixArr) {
 
 //using filter and indexOf is using a loop inside a loop making it linear so slow
 
+//anki problem memorize this
 function missNum(arr, mixArr) {
+    //constant check
     if (arr.length === mixArr.length){
         return 0
     }else{
         let arrSum = arr.reduce((a,b)=> a + b, 0)
         let mixArrSum = mixArr.reduce((a,b)=> a + b, 0)
         return arrSum - mixArrSum
+        //linear loops, non nested so theyre not as slow
+    }
+}
+
+function missNum(arr, mixArr) {
+    if(arr.length === mixArr.length){
+        return 0
+    }else{
+        let sum = arr.reduce((a,b)=> a + b, 0)
+        let mixSum = mixArr.reduce((a,b)=> a + b, 0)
+        return sum - mixSum
     }
 }
