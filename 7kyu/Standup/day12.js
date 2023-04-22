@@ -60,5 +60,13 @@ function missNum(arr, mixArr) {
         return sum - mixSum
     }
 }
-//test
-//more test
+
+function missNum(arr, mixArr){
+    if(arr.length === mixArr.length){
+        return 0
+    }else{
+        let sum = arr.reduce((a,b)=> a + b, 0)
+        let mixSum = mixArr.reduce((a,b)=> a + b, 0)
+        return sum - mixSum
+    }
+}
