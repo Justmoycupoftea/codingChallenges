@@ -79,4 +79,17 @@ function checkDiff(a,b) {
 
 
 
-//will it always be arrays, pos nums, whole nums, neg nums? special chars?
+//will it always be arrays, pos nums, whole nums, neg nums? special chars?, whole nums, floated values
+
+function arrDiff(a,b){
+    // if(a.length === 0 || b.length === 0){ return a }
+    //loop inside loop, quadratric soln, we want to stay away from quads, slow
+    // return a.filter(function(x) {return b.indexOf(x) == -1; })
+
+    //better soln, looking for values that are unique
+    //sets makes sure theres no duplicate letters, properties happening in constant time
+    let newSet = new Set(b)
+    return a.filter(n => !newSet.has(n) )
+    //has happens in constant time, arrays happen in linear time
+
+}
