@@ -69,3 +69,9 @@ function sortArray(array) {
 //return even numbers in same order, sort odd nums
 //filter all the uneven nums, sort the uneven nums
 //return the new mapped array if num is even just return in same spot, and add all uneven nums into new array
+
+function arraySort(nums){
+  let sortedOdd = nums.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+
+  return sorted.map(n => n % 2 === 0 ? n : sortedOdd.shift())
+}
