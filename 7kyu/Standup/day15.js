@@ -75,3 +75,10 @@ function arraySort(nums){
 
   return sorted.map(n => n % 2 === 0 ? n : sortedOdd.shift())
 }
+
+function arraySort(nums){
+  let sortedOdd = nums.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+
+  return sorted.map(n => n % 2 === 0 ? n : sortedOdd.shift())
+}
+
