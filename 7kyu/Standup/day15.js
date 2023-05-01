@@ -84,3 +84,8 @@ function arraySort(nums){
   //sort odd nums, return even nums to array and push all sorted odds into array
 }
 
+function arrayS(nums) {
+  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
+
+  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
+}
