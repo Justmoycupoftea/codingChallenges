@@ -119,3 +119,7 @@ function arrayS(nums) {
 //return even numbers in same order, sort odd nums
 //filter all the uneven nums, sort the uneven nums
 //return the new mapped array if num is even just return in same spot, and add all uneven nums into new array
+
+function arrayTotal(num){
+  
+}
