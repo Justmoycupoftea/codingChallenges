@@ -101,3 +101,9 @@ function arrayS(nums) {
 
   return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
 }
+
+function arrayS(nums) {
+  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
+
+  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
+}
