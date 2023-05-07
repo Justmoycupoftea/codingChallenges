@@ -114,6 +114,12 @@ function arrayS(nums) {
   return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
 }
 
+function arrayS(nums) {
+  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
+
+  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
+}
+
 // You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
 // Examples
