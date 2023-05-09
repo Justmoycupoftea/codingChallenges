@@ -144,6 +144,12 @@ function arrayS(nums) {
 //filter all the uneven nums, sort the uneven nums
 //return the new mapped array if num is even just return in same spot, and add all uneven nums into new array
 
+//brute force method
 function arrayTotal(num){
+  //filter -> sort
+  const odds = num.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+  //map
+  //place pos num in arr if odd then throw in an sorted odd
+  return num.map(n => n % 2 === 0 ? n : odds.shift())
 
 }
