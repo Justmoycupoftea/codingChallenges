@@ -84,53 +84,7 @@ function arraySort(nums){
   //sort odd nums, return even nums to array and push all sorted odds into array
 }
 
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
 
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
-
-function arrayS(nums) {
-  let sortedO = nums.filter(n=> n % 2 !==0).sort((a,b)=> a-b)
-
-  return sortedO.map(n => n % 2 !== 0).sort((a,b)=> a-b)
-}
 
 // You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
@@ -151,5 +105,17 @@ function arrayTotal(num){
   //map
   //place pos num in arr if odd then throw in an sorted odd
   return num.map(n => n % 2 === 0 ? n : odds.shift())
+  //shifting is linear, we want CONSTANT TIME
+
+}
+
+//CONSTANT TIME METHOD
+function arrayS(nums) {
+  //filter -> sort
+  const odds = nums.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+  //map
+  //place pos num in arr if odd then throw in an sorted odd
+  return nums.map(n => n % 2 === 0 ? n : odds.pop())
+  //shifting is linear, we want CONSTANT TIME so USE POP
 
 }
