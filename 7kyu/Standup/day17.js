@@ -40,5 +40,12 @@ const removeConsecutiveDuplicates = s => s.split(" ").filter((w,i,a) => w != a[i
 
 // --> "alpha beta gamma delta alpha beta gamma delta"
 
-//any special chars, spaces or anything
+//any special chars, spaces or anything, will it never not be a string, calrify getting a string
+//return string with no consectuive duplicates
 
+function remove(str){
+    //remove something, use filter, need to split the string
+    //str -> split " " -> filter 
+    return str.split(" ").filter((w,i,a) => w != a[i-1]).join(' ')
+    //look at index and current array and subtract one from it in the a[i-1]
+}

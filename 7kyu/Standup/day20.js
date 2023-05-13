@@ -58,3 +58,17 @@ function fizzBuzz(num){
 
 console.log(fizzBuzz(6), '1,fizz,buzz,fizz,5,fizzBuzz')
 console.log(fizzBuzz(8), '1,fizz,buzz,fizz,5,fizzBuzz,7,fizz')
+
+function fizzbuzz(nums){
+    for (let i = 1; i <= nums; i++){
+        if(i % 2 === 0 && i % 3 === 0){
+            return 'fizzbuzz'
+        }else if(i % 2 === 0){
+            return 'fizz'
+        }else if(i % 3 === 0){
+            return 'buzz'
+        }else{
+            return i
+        }
+    }
+}
