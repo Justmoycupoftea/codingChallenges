@@ -43,4 +43,25 @@ console.log(reverseString)(('bob'), 'bob')
 console.log(reverseString)(('john'), 'nhoj')
 console.log(reverseString)(('sarah'), 'haras')
 
+// Given a string of characters as input, write a function that returns it with the characters reversed. No Reverse Method (well brute force it first, but then no reverse method)! 
+//NO REVERSE METHOD
+
+//will it always be a string, any nums, spaces special chars, neg nums
+//return string of characters reversed
+//hello -> olleh
+//take in a string, split(), reverse(), and join('')
+
+//take in str --> char
+//str -> str rev
+//get same thing that comes out that goes in but reversed
+
+function reverseString(str){
+    let reverseStr = ""
+    //loop through string, move through each char with loop then add to empty string
+    for(let char of str){
+        reverseStr = char + reverseStr
+    }
+    return reverseStr
+}
+
 

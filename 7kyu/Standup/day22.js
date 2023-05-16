@@ -2,24 +2,33 @@
 
 // What if the string is empty? Then the result should be empty object literal, {}.
 
-function solution(pairs){
-    return Object.keys(pairs)
-      .map(function(k) { return k + ' = ' + pairs[k] })
-      .join(',');
-  }
+//build object
+//will it always be a string, empty string, nothign special?
 
-  function solution(pairs){
-    return Object.keys(pairs)
-    .map(function(k) { return k + '=' + pairs[k] })
-    .join(',');
-  }
 
-//other soln
-function solution(pairs) {
-    return Object.keys(pairs).map(k => `${k} = ${pairs[k]}`).join(",");
+function countChars(str){
+//loop through string and pull off ea letter, then build an object with that letter, keep adding 1 to a and b, so a ++
+//create obj
+    let countObj = {}
+//loop -> through to see if value exist ? val++ : val-1, no exist put value into obj so a 1
+    for(const c of str){
+        //grabs ea char from string
+        if( countObj[c] ){
+        //this is only true if value inside object [c] is checking if exist inside obj
+        countObj[c]++
+        }else{
+            countObj[c] = 1
+        }
+    }
+    return countObj
+    //if obj empty return nothing, loop doesn't work
+
 }
 
-//my soln solved a diff problem
+console.log(countChars('aba'), "{'a': 2, 'b': 1}")
+
+
+
 //leon's soln
 function countChars(str){
     //create obj
