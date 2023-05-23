@@ -30,6 +30,7 @@ function repeats1(arr1){
 
 function repeats(arr){
   return arr.filter(n => indexOf(n) === arr.lastIndexOf(n).reduce((a,c)=> a + c, 0))
+  //filtering out any number that equals ea other and adding the single values
 }
 
 //using a loop

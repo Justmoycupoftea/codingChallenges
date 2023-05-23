@@ -16,7 +16,7 @@ function solve(arr) {
 };
 
 function solve(arr) {
-    return arr.map(sa => new Set(sa).size).reduce((a,c)=> a + c, 1)
+    return arr.map(n => new Set(n).reduce((a,c)=> a + c, 1))
     //mapping new array
     //adding up new array and returning the array as a set
 }

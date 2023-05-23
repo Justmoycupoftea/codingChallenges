@@ -56,6 +56,24 @@ function nsmally(arr, n) {
 console.log(nthSmallest([3,1,2],2), '2')
 console.log(nthSmallest([177,225,243,-169,-12,-5,2,92],5), '92')
 
+function findSmall(arr, n){
+    //taking in an array, so i need to sort it
+    //find nth num, look for index, take num and -1 so we can find numb in that index
+    return arr.sort((a,b)=> a - b)[n-1]
+    //[n-1] subtracts 1 from index to find element
+
+}
+
+function findsNum(arr, n){
+    return arr.sort((a,b)=> a - b)[n-1]
+}
+
+function findNum(arr, n){
+    return arr.sort((a,b)=> a - b)[n-1]
+    //[n-1] subtracts 1 from index to find element
+
+}
+
 //another soln
 function nthSmallest(arr, pos){
     let sorted = arr.sort((a,b) => a-b);
