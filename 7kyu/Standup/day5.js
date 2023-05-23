@@ -24,8 +24,12 @@ console.log([9, 10, 19, 13, 19, 13]),19
 //prac
 function repeats1(arr1){
   //take arr and filter arr to find single values -> filter single values -> reduce and add up single values
-  arr1.filter(n => arr1.indexOf(n) === arr1.lastIndexOf(n).reduce((a,c) => a + c, 0))
+  return arr1.filter(n => arr1.indexOf(n) === arr1.lastIndexOf(n).reduce((a,c) => a + c, 0))
   //index of n finds the number that occurs once bc were adding the nums that occur once together
+}
+
+function repeats(arr){
+  return arr.filter(n => indexOf(n) === arr.lastIndexOf(n).reduce((a,c)=> a + c, 0))
 }
 
 //using a loop
