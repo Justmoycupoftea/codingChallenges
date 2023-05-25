@@ -19,7 +19,12 @@ function duplicateEncode(word){
                 .split()
                 .map((l, i, a) => a.indexOf(l) === a.lastIndexOf(l) ) ? '(' : ')'
                 //current letter equal to last letter
+                //indexOf and lastIndexOf compares values to each other to see if it is repeated or not
                 .join('')
+}
+
+function dupes(word){
+  return word.toLowerCase().split().map((l, i, a) => a.indexOf(l) === a.lastIndexOf(l)) ? '(' : ')'
 }
 
 function dupes(word){

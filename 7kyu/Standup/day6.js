@@ -39,7 +39,7 @@ function evensOnly(arr, num){
 function evens(arr, num){
     //filter out for even nums only
     return arr.filter(n => n % 2 === 0).slice(-num)
-    //slice num to keep original order or array
+    //slice nums to keep original order or array
 }
 
 //i wanna get rid of all odd nums and be left with only even nums right bob?
