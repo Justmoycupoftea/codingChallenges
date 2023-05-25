@@ -36,6 +36,12 @@ function evensOnly(arr, num){
     //use slice to copy all the even nums
 }
 
+function evens(arr, num){
+    //filter out for even nums only
+    return arr.filter(n => n % 2 === 0).slice(-num)
+    //slice num to keep original order or array
+}
+
 //i wanna get rid of all odd nums and be left with only even nums right bob?
 //u only want me to get the last 3, '4,6,8' ok bob?
 console.log(nEvenNums([1, 2, 3, 4, 5, 6, 7, 8, 9], 3), '[4, 6, 8]')
