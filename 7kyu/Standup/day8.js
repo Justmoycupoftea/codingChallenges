@@ -44,6 +44,10 @@ function findN(arr, n){
     return arr.sort((a,b)=> a - b)[n-1]
 }
 
+function findN(arr, n){
+    return arr.sort((a,b)=> a - b)[n-1]
+}
+
 function findSmallN(arr, n) {
     //taking in an array, so i need to sort it
     //find nth num, look for index, take num and -1 so we can find numb in that index
