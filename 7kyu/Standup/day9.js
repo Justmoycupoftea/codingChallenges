@@ -78,3 +78,10 @@ function dupes(word){
   //index of l compares first letter to lastindexof to last letter 'din' => ((( nothing is match
   //recede => ()()()
 }
+
+function dupes(word){
+  return word.toLowerCase().split().map((l, i, a)=> a.indexOf(l) === a.lastIndexOf(l)) ? '(' : ')'.join('')
+  //current letter is equal to last letter return open ')' if not return '('
+  //index of l compares first letter to lastindexof to last letter 'din' => ((( nothing is match
+  //recede => ()()()
+}
