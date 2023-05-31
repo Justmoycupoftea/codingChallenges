@@ -39,3 +39,10 @@ console.log(stringTransformer("Leon Noel"), "nOEL lEON")
 
 // console.log(stringTransformer1("Example Input"), "iNPUT eXAMPLE")
 // console.log(stringTransformer1("Leon Noel"), "nOEL lEON")
+
+
+//taking in string change capital letters to lowercase and vice versa
+
+function stringTrans(str){
+
+}
