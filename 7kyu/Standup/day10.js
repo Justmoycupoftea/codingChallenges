@@ -42,7 +42,17 @@ console.log(stringTransformer("Leon Noel"), "nOEL lEON")
 
 
 //taking in string change capital letters to lowercase and vice versa
+//will it always be a string, normal characters, nothing special 
+//return words reversed with opposite case
 
 function stringTrans(str){
+  //split str " " splits words not characters -> reverse -> join
+  //split str "" no space so splits characters -> map return l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()
+  //if uppercase return lower else return lowercase
+  let reversedStr = str.split(' ').reverse().join(' ')
+  //without space in join we'll make one long string, use space if in split so put in join
+  let transformedStr = reversedStr.split('').map(l => l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()).join('')
 
+
+  return transformedStr
 }
