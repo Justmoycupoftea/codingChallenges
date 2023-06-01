@@ -55,4 +55,6 @@ function stringTrans(str){
 
 
   return transformedStr
+
+  //can make this one liner with combining everything
 }

@@ -14,6 +14,13 @@ function last(x){
     return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
 }
 
+function lastLetter(x){
+    //split sort
+    //sort -> charAt()
+    //grabs the word and gets last letter with .length - 1
+    return x.split(' ').sort((a,b)=> a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+}
+
 function last(x){
     return x.split(' ').sort((a,b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
 }
@@ -59,3 +66,14 @@ return x.split('').sort((a,b)=> a.charCodeAt(a.length - 1) - b.charCodeAt(b.leng
 
 //doing in ES6 one line
 const last = ( l ) => l.split(' ').sort((a,b)=> a.slice(-1) > b.slice(-1))
+
+function lasty(x) {
+    //use a sort, have to split and sort array
+    //sort is lexigraphical, sorts by letters already
+    //grab last letter and can sort it
+    return x.split('').sort((a,b)=> a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+    //charcodeat treats the string as an index, charcode starts counting at 0
+    //comparing letters to each other with sort
+    //taking last letter of a and sorting entire string
+    
+    }
