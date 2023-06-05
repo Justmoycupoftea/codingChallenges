@@ -99,10 +99,27 @@ function missNum(arr, mixArr) {
     //constant check
     if (arr.length === mixArr.length){
         return 0
+    //check for equal lengths to compare, return 0 if the same no num was deleted
     }else{
         let arrSum = arr.reduce((a,b)=> a + b, 0)
         let mixArrSum = mixArr.reduce((a,b)=> a + b, 0)
         return arrSum - mixArrSum
         //linear loops, non nested so theyre not as slow
+        //add up arrays and subtract from ea to find missing num
+    }
+}
+
+//anki problem memorize this
+function missNum(arr, mixArr) {
+    //constant check
+    if (arr.length === mixArr.length){
+        return 0
+    //check for equal lengths to compare, return 0 if the same no num was deleted
+    }else{
+        let arrSum = arr.reduce((a,b)=> a + b, 0)
+        let mixArrSum = mixArr.reduce((a,b)=> a + b, 0)
+        return arrSum - mixArrSum
+        //linear loops, non nested so theyre not as slow
+        //add up arrays and subtract from ea to find missing num
     }
 }
