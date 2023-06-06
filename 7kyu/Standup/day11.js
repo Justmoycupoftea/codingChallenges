@@ -103,3 +103,14 @@ function lasty(x) {
             //can use sort in method chaining so we sort by the last letter, a.charAt(a.length - 1)
             //we're chaining with a.
 }
+
+function lasty(x) {
+    //use a sort, have to split and sort array
+    //sort is lexigraphical, sorts by letters already
+    //grab last letter and can sort it
+    return x.split('').sort((a,b)=> a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1))
+    //charcodeat lets us target the letter vs indexOf gives us the index at the position
+    //using indexOf is not useful bc we get the index number and not the letter we want
+    //can use sort in method chaining so we sort by the last letter, a.charAt(a.length - 1)
+    //we're chaining with a.
+}
