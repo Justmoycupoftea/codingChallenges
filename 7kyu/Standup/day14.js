@@ -31,3 +31,9 @@ function giveme(three){
     //index of the middle of three nums would be 1  
     //sort array and find index of num
 }
+
+function giveme(three){
+    return three.indexOf([...three].sort((a,b)=> a - b[1]))
+    //index of the middle of three nums would be 1  
+    //sort array and find index of num
+}

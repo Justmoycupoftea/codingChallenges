@@ -104,6 +104,15 @@ function arrDiff(a,b){
     //sets makes sure theres no duplicate letters, properties happening in constant time
     let newSet = new Set(b)
     return a.filter(n => !newSet.has(n) )
+    //filtering out anything that is equal to b and return anythign that is not equal
+    
     //has happens in constant time, arrays happen in linear time
+    // arrayDiff([1,2,2,2,3],[2]) == [1,3]
+    //filter everything out of 'a' that is in 'b' the second param
+     
+    //and return a new filtered a
+    //use .has in sets bc of constant time better than linear
+    //answer returns this
+    // It should remove all values from list a, which are present in list b keeping their order.
 
 }
