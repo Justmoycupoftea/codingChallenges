@@ -119,3 +119,14 @@ function arrayS(nums) {
   //shifting is linear, we want CONSTANT TIME so USE POP
 
 }
+
+//brute force method
+function arrayTotal(num){
+  //filter -> sort
+  const odds = num.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+  //map
+  //place pos num in arr if odd then throw in an sorted odd
+  return num.map(n => n % 2 === 0 ? n : odds.shift())
+  //shifting is linear, we want CONSTANT TIME
+
+}
