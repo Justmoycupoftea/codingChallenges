@@ -131,3 +131,14 @@ function arrayTotal(num){
   //shifting is linear, we want CONSTANT TIME
 
 }
+
+function arrayTotal(num){
+  //filter -> sort
+  //filtering for odds and sorting the odds
+  const odds = num.filter(n => n % 2 !== 0).sort((a,b)=> a-b)
+  //map
+  //place pos num in arr, if odd then throw in an sorted odd
+  return num.map(n => n % 2 === 0 ? n : odds.shift())
+  //shifting is linear, we want CONSTANT TIME
+
+}
