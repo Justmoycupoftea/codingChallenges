@@ -50,3 +50,9 @@ function avgLength(arr){
 
 }
 
+function avgL(arr){
+  const avgL = Math.round(arr.join('').length / arr.length)
+
+  return arr.map(str => str[0].repeat(avgL))
+}
+
