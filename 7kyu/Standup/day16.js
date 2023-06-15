@@ -54,5 +54,17 @@ function avgL(arr){
   const avgL = Math.round(arr.join('').length / arr.length)
 
   return arr.map(str => str[0].repeat(avgL))
+  //take letter in 0 beginning, repeating letters
+  //new array is created, grab avg length of a, b, c, keeps looping until we get length
+  //SOLN grabs first letter of string and will keep repeating until ti satifies the avg length
+}
+
+function avgL(arr){
+  const avgL = Math.round(arr.join('').length / arr.length)
+
+  return arr.map(str => str[0].repeat(avgL))
+  //take letter in 0 beginning, repeating letters
+  //new array is created, grab avg length of a, b, c, keeps looping until we get length
+  //SOLN grabs first letter of string and will keep repeating until ti satifies the avg length
 }
 
