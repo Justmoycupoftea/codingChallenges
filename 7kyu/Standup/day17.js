@@ -49,3 +49,10 @@ function remove(str){
     return str.split(" ").filter((w,i,a) => w != a[i-1]).join(' ')
     //look at index and current array and subtract one from it in the a[i-1]
 }
+
+function remove(str){
+    //remove something, use filter, need to split the string
+    //str -> split " " splits word and not indvidual letters -> filter 
+    return str.split(" ").filter((w,i,a) => w != a[i-1]).join(' ')
+    //look at index and current array and subtract one from it in the a[i-1]
+}
