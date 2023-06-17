@@ -56,3 +56,8 @@ function remove(str){
     return str.split(" ").filter((w,i,a) => w != a[i-1]).join(' ')
     //look at index and current array and subtract one from it in the a[i-1]
 }
+
+function removeStr(str){
+    return str.split(' ').filter((w,i,a)=> w != a[i-1]).join(' ')
+    //put a space in split, you split the words and not letters
+}
