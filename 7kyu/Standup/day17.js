@@ -67,3 +67,9 @@ function removeStr(str){
     //put a space in split, you split the words and not letters
     //filter out words that are not similar to ea other, filter out same words
 }
+
+function removeStr(str){
+    return str.split(' ').filter((w,i,a)=> w != a[i-1]).join(' ')
+    //put a space in split, you split the words and not letters
+    //filter out words that are not similar to ea other, filter out same words
+}
