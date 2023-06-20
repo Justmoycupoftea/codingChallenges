@@ -18,4 +18,9 @@ function dup(s) {
     //map grab each word and do something to it then make it the first word in new array
     //map -> word - split - filter - join
     return s.map(word => word.split('').filter((l,i,a) => l != a[i-1] ).join(''))
-    };
+};
+
+function same(s){
+    return s.map(word => word.split('').filter((l,i,a) => l != a[i-1]).join(''))
+    //copy array, filter out ea letter that is not the same as ea other and join letters for new word
+}
