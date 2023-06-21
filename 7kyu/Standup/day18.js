@@ -23,4 +23,9 @@ function dup(s) {
 function same(s){
     return s.map(word => word.split('').filter((l,i,a) => l != a[i-1]).join(''))
     //copy array, filter out ea letter that is not the same as ea other and join letters for new word
+    //similar letters will be filtered out
+}
+
+function sames(s){
+    return s.map(word =>  word.split('').filter((w,i,a)=> w != a[i - 1].join('')))
 }
