@@ -28,4 +28,5 @@ function same(s){
 
 function sames(s){
     return s.map(word =>  word.split('').filter((w,i,a)=> w != a[i - 1].join('')))
+    //filter out similar letters, only return letters not same as ea other
 }
