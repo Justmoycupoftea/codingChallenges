@@ -28,3 +28,27 @@ function absentVowel(x){
 
 console.log(absentVowel('John Doe hs seven red pples under his bsket'), '0')
 console.log(absentVowel('Bb Smith sent us six neatly arranged range bicycles'), '3')
+
+function abs(x){
+    let vowels = 'aeiou'
+    for(let i = 0; i < vowels.length; i++){
+        if( x.indexOf(vowels[i]) === -1){
+            return i
+        }
+    }
+}
+
+function abs(x){
+    //see if letter exist or not
+    //list out all vowels -> loop through ea letter and see if that letter exist
+    let vowel = 'aeiou'
+    for(let i = 0; i < vowel.length; i++){
+        if (x.indexOf(vowel[i]) === -1){
+            return i
+        }
+        //if a is not inside the string it will have an index of '-1' which is why its used
+        //grabbing whatever vowel im in and checking if the index of a or e is in the string
+        //missing vowel would be -1 and the index of the letter will be returned
+        //indexOf is a linear loop
+    }
+}
