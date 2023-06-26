@@ -93,3 +93,13 @@ function reverse(str){
     }
     return newStr
 }
+
+function reverse(str){
+    let newStr = ""
+
+    for(let char of str){
+        //loop through string return ea letter and combine into new reversed string
+        newStr = char + newStr
+    }
+    return newStr
+}
