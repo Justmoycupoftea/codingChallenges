@@ -103,3 +103,16 @@ function reverse(str){
     }
     return newStr
 }
+
+function reverseStr(str){
+    //return str.split('').reverse('').join('') brute force reverse method
+    //use a loop to go through string and return ea letter then combine reversed
+    //when loop through a string, ea char is returned reversed
+
+    let reverseStr1 = ""
+    for(let cha of str){
+        //loop thru ea char
+        reverseStr1 = cha + reverseStr1
+    }
+    return reverseStr1
+}
