@@ -56,3 +56,4 @@ console.log(countChars('abba'), "{'a': 2, 'b': 2}")
 
 //build object
 //will it always be a string, empty string, nothign special?
+
