@@ -92,4 +92,16 @@ function countChars(str){
         return countObj
         //if obj empty return nothing, loop doesn't work
     
+}
+
+function countChars(str){
+    let countobjects = {}
+    for(const c of str){
+        if (countobjects[c]){
+            countobjects[c]++
+        }else{
+            countobjects[c] = 1
+        }
     }
+    return countobjects
+}
