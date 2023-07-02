@@ -105,3 +105,16 @@ function countChars(str){
     }
     return countobjects
 }
+
+function countChars(str){
+    let countobjects = {}
+    for(const c of str){
+        if (countobjects[c]){
+            countobjects[c]++
+        }else{
+            countobjects[c] = 1
+        }
+    }
+    return countobjects
+}
+
