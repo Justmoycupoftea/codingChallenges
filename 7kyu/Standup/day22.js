@@ -130,3 +130,19 @@ function countChars(str){
     return countobjects
 }
 
+function countChars(str){
+    let count = {}
+    //make empty obj to store our count
+    //loop thru string
+    for(const c of str){
+        if(count[c]){
+            count[c]++
+        //if same letter in string we add to it 
+        }else{
+            count[c] = 1
+        //else return whatever the count is when the loop is done
+        }
+    }
+    return count
+}
+
