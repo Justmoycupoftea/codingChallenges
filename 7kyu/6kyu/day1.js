@@ -11,7 +11,9 @@ function sumMultiples(num) {
   
     let sum = 0;
     for (let i = 3; i < num; i++) {
+    //loop through nums starting at 3 till end
       if (i % 3 === 0 || i % 5 === 0) {
+    //we only want nums divisble by 3 or 5 then we sum those num up that we find from the loop
         sum += i;
       }
     }
@@ -29,8 +31,17 @@ function sumMultiples(num) {
   
 //   Finally, we return the computed sum.
 
-//another soln
+function sumMultiple(nums){
+    if (nums < 0){
+        return 0;
+    }
 
-function solution(number){
-    return number < 1 ? 0 : [...new Array(number).keys()].filter(n => n % 3 == 0 || n % 5 == 0).reduce((a, b) => a + b);
-  }
+    let sum = 0
+    //use a loop to loop thru nums
+    for(let i = 3; i < nums; i++){
+        if( i % 3 === 0 || i % 5 === 0){
+            sum += i
+        }
+    }
+    return sum
+}
