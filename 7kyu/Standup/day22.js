@@ -158,3 +158,15 @@ function countCs(str){
     }
 }
 
+function countCs(str){
+    let count = {}
+    for(const c of str){
+        if(count[c]){
+            count[c]++
+        }else{
+            count[c] = 1
+        }
+        return count
+    }
+}
+
