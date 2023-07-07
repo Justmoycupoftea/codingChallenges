@@ -45,3 +45,18 @@ function sumMultiple(nums){
     }
     return sum
 }
+
+function sumM(nums){
+    if(nums < 0){
+        return 0;
+    }
+
+    let emptySum = 0
+
+    for(let i = 3; i < nums; i++){
+        if(i % 3 === 0 || i % 5 === 0){
+            emptySum += i
+        }
+    }
+    return emptySum
+}
