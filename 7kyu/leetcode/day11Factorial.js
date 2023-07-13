@@ -80,3 +80,10 @@ function fact(n){
     }
     return n * fact(n - 1)
 }
+
+function fact(n){
+    if (n < 2){
+        return 0
+    }
+    return n * fact(n - 1)
+}
