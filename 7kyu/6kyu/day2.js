@@ -65,3 +65,19 @@ function likes(names) {
       return names[0] + ", " + names[1] + " and " + (totalLikes - 2) + " others like this";
     }
 }
+
+function likes(names) {
+    const totalLikes = names.length;
+  
+    if (totalLikes === 0) {
+      return "no one likes this";
+    } else if (totalLikes === 1) {
+      return names[0] + " likes this";
+    } else if (totalLikes === 2) {
+      return names[0] + " and " + names[1] + " like this";
+    } else if (totalLikes === 3) {
+      return names[0] + ", " + names[1] + " and " + names[2] + " like this";
+    } else {
+      return names[0] + ", " + names[1] + " and " + (totalLikes - 2) + " others like this";
+    }
+}
