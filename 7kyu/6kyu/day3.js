@@ -34,6 +34,15 @@ function createPhoneNumber(numbers) {
     // Return the phone number in the desired format
     return `(${areaCode}) ${firstPart}-${secondPart}`;
 }
+
+function createPhoneNumber(numbers){
+
+    let areaCode = numbers.slice(0, 3).join('')
+    let first = numbers.slice(3,6).join('')
+    let second = numbers.slice(6).join('')
+
+    return `(${areaCode} - ${first} - ${second})`;
+}
   
 
 //loop version
