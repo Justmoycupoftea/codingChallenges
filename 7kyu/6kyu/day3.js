@@ -43,6 +43,14 @@ function createPhoneNumber(numbers){
 
     return `(${areaCode} - ${first} - ${second})`;
 }
+
+function createP(numbers){
+    let areaCode = numbers.slice(0,3).join('')
+    let first = numbers.slice(3,6).join('')
+    let end = numbers.slice(6).join('')
+
+    return `${areaCode} - ${first} - ${end}`;
+}
   
 
 //loop version
