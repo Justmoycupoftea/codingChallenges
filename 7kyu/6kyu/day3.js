@@ -79,4 +79,18 @@ function createPhoneNumber(numbers){
     }
     
     return format;
-  }
+}
+
+function createNum(nums){
+    let phoneNumber = 'xxx-xxx-xxxx'
+    //empty obj hold num
+
+    for(let i = 0; i < nums.length; i ++){
+        //use loop to loop thru params to find nums
+        //replace nums in obj with num that is looped through, use array and value in array num[i]
+        phoneNumber = phoneNumber.replace('x', nums[i])
+    }
+
+    return phoneNumber
+
+}
