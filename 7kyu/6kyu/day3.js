@@ -68,6 +68,14 @@ function createP(numbers){
     return `${areaCode} - ${first} - ${end}`;
 }
 
+function createP(numbers){
+    let areaCode = numbers.slice(0,3).join('')
+    let first = numbers.slice(3,6).join('')
+    let end = numbers.slice(6).join('')
+
+    return `${areaCode} - ${first} - ${end}`;
+}
+
 //loop version
 
 function createPhoneNumber(numbers){
@@ -88,9 +96,9 @@ function createNum(nums){
     for(let i = 0; i < nums.length; i ++){
         //use loop to loop thru params to find nums
         //replace nums in obj with num that is looped through, use array and value in array num[i]
-        phoneNumber = phoneNumber.replace('x', nums[i])
+        phoneNumber = phoneNumber.replace('x', nums[i]);
     }
 
-    return phoneNumber
+    return phoneNumber;
 
 }
