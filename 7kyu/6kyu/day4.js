@@ -9,7 +9,28 @@
 // [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
-function findOdd(A) {
-
-    return 0;
+function findOddOccurrence(arr) {
+    const frequencyMap = {}; // Object to store the frequency of each element
+  
+    // Count the occurrences of each element in the array
+    for (const num of arr) {
+      frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+  
+    // Find the element with an odd occurrence
+    for (const num in frequencyMap) {
+      if (frequencyMap[num] % 2 === 1) {
+        return parseInt(num); // Convert back to an integer before returning
+      }
+    }
   }
+  
+  // Test cases
+  console.log(findOddOccurrence([7])); // Output: 7
+  console.log(findOddOccurrence([0])); // Output: 0
+  console.log(findOddOccurrence([1, 1, 2])); // Output: 2
+  console.log(findOddOccurrence([0, 1, 0, 1, 0])); // Output: 0
+  console.log(findOddOccurrence([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1])); // Output: 4
+
+  This function first creates a frequency map using an object and then iterates through the map to find the element with an odd occurrence, which is then returned as the result.
+  
