@@ -13,6 +13,7 @@ function findOddOccurrence(arr) {
     const frequencyMap = {}; // Object to store the frequency of each element
   
     // Count the occurrences of each element in the array
+    // after looping add +1 to keep count of ea time the num occurs
     for (const num of arr) {
       frequencyMap[num] = (frequencyMap[num] || 0) + 1;
     }
@@ -32,5 +33,22 @@ function findOddOccurrence(arr) {
   console.log(findOddOccurrence([0, 1, 0, 1, 0])); // Output: 0
   console.log(findOddOccurrence([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1])); // Output: 4
 
-  This function first creates a frequency map using an object and then iterates through the map to find the element with an odd occurrence, which is then returned as the result.
+//   This function first creates a frequency map using an object and then iterates through the map to find the element with an odd occurrence, which is then returned as the result.
+
+function findOddOccurrence(arr) {
+    const frequencyMap = {}; // Object to store the frequency of each element
+  
+    // Count the occurrences of each element in the array
+    // after looping add +1 to keep count of ea time the num occurs
+    for (const num of arr) {
+      frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+  
+    // Find the element with an odd occurrence
+    for (const num in frequencyMap) {
+      if (frequencyMap[num] % 2 === 1) {
+        return parseInt(num); // Convert back to an integer before returning
+      }
+    }
+  }
   
