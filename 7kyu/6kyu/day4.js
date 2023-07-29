@@ -68,4 +68,21 @@ function findOddOccurrence(arr) {
       }
     }
   }
+
+  function findOddOccurrence(arr) {
+    const frequencyMap = {}; // Object to store the frequency of each element
+  
+    // Count the occurrences of each element in the array
+    // after looping add +1 to keep count of ea time the num occurs
+    for (const num of arr) {
+      frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+  
+    // Find the element with an odd occurrence
+    for (const num in frequencyMap) {
+      if (frequencyMap[num] % 2 === 1) {
+        return parseInt(num); // Convert back to an integer before returning
+      }
+    }
+  }
   
