@@ -33,3 +33,20 @@ function digitalRoot(n) {
 
 //   Replace the number variable with the non-negative integer you want to find the digital root of. The digitalRoot function takes care of calculating the digital root using recursion and returns the final single-digit result.
   
+function digitalRoot(n) {
+    // Base case: if n is a single-digit number, return n
+    if (n < 10) {
+      return n;
+    }
+  
+    let sum = 0;
+  
+    // Calculate the sum of digits
+    while (n > 0) {
+      sum += n % 10;
+      n = Math.floor(n / 10);
+    }
+  
+    // Recursively calculate digital root of the sum
+    return digitalRoot(sum);
+  }
