@@ -42,6 +42,7 @@ function digitalRoot(n) {
     let sum = 0;
   
     // Calculate the sum of digits
+    //we % 10 cuz we want a single digit num returned
     while (n > 0) {
       sum += n % 10;
       n = Math.floor(n / 10);
@@ -50,6 +51,23 @@ function digitalRoot(n) {
     // Recursively calculate digital root of the sum
     return digitalRoot(sum);
   }
+
+function digRoot(n){
+    if (n < 10){
+        return n;
+    }
+
+    let sum = 0;
+
+    while (n > 0){
+        sum += n % 10;
+        n = Math.floor(n / 10);
+    
+    }
+    return digRoot(sum)
+}
+
+  
 function digRoot(n){
     if (n < 10){
         return n;
